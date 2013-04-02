@@ -13178,7 +13178,7 @@
 <hole x="66.04" y="7.62" drill="3.2"/>
 <hole x="15.24" y="50.8" drill="3.2"/>
 <hole x="13.97" y="2.54" drill="3.2"/>
-<text x="67.31" y="13.208" size="1.778" layer="21" font="vector" ratio="15" rot="R90">Spark
+<text x="25.4" y="11.43" size="1.778" layer="21" font="vector" ratio="15">Spark
 Shield Shield
 v0.0.2
 2013-04-02</text>

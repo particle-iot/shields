@@ -2562,6 +2562,18 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <label x="30.48" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="AREF" class="0">
+<segment>
+<wire x1="200.66" y1="92.71" x2="175.26" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="IOH" gate="A" pin="8"/>
+<label x="175.26" y="92.71" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDDA"/>
+<wire x1="127" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="133.35" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="RESET" class="0">
 <segment>
 <wire x1="45.72" y1="91.44" x2="29.21" y2="91.44" width="0.1524" layer="91"/>
