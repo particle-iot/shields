@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2394,7 +2394,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="29.21" y1="69.85" x2="39.37" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="69.85" x2="39.37" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="72.39" x2="52.07" y2="72.39" width="0.1524" layer="91"/>
-<label x="59.69" y="72.39" size="1.778" layer="95" rot="R180"/>
+<label x="53.34" y="72.39" size="1.778" layer="95"/>
 <pinref part="AD" gate="A" pin="1"/>
 </segment>
 <segment>
@@ -2408,7 +2408,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="52.07" y1="69.85" x2="41.91" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="69.85" x2="41.91" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="67.31" x2="29.21" y2="67.31" width="0.1524" layer="91"/>
-<label x="59.69" y="69.85" size="1.778" layer="95" rot="R180"/>
+<label x="53.34" y="69.85" size="1.778" layer="95"/>
 <pinref part="AD" gate="A" pin="2"/>
 </segment>
 <segment>
@@ -2422,7 +2422,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="29.21" y1="64.77" x2="44.45" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="44.45" y1="64.77" x2="44.45" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="44.45" y1="67.31" x2="52.07" y2="67.31" width="0.1524" layer="91"/>
-<label x="59.69" y="67.31" size="1.778" layer="95" rot="R180"/>
+<label x="53.34" y="67.31" size="1.778" layer="95"/>
 <pinref part="AD" gate="A" pin="3"/>
 </segment>
 <segment>
@@ -2464,9 +2464,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="200.66" y1="39.37" x2="172.72" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="39.37" x2="172.72" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="41.91" x2="165.1" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="41.91" x2="165.1" y2="31.75" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="31.75" x2="157.48" y2="31.75" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="34.29" x2="157.48" y2="31.75" width="0.1524" layer="91"/>
 <label x="170.18" y="41.91" size="1.778" layer="95"/>
 <pinref part="IOL" gate="A" pin="1"/>
 </segment>
@@ -2600,7 +2597,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <approved hash="115,1,200.897,46.8588,IOL,,,,,"/>
 <approved hash="115,1,200.897,82.4188,IOH,,,,,"/>
 <approved hash="115,1,28.9729,64.9012,AD,,,,,"/>
-<approved hash="115,1,30.2066,86.4912,POWER,,,,,"/>
+<approved hash="115,1,29.4929,86.4912,POWER,,,,,"/>
+<approved hash="115,1,43.4171,122.051,CN1,,,,,"/>
+<approved hash="115,1,41.3173,134.425,JP1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
