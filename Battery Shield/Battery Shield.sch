@@ -1188,6 +1188,11 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="30.48" y1="63.5" x2="38.1" y2="63.5" width="0.2032" layer="91"/>
 <label x="35.56" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@21"/>
+<wire x1="101.6" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+<label x="106.68" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RAW" class="0">
 <segment>
