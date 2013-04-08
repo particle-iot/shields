@@ -2260,25 +2260,25 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="ADJ"/>
-<wire x1="109.22" y1="124.46" x2="109.22" y2="111.76" width="0.2032" layer="91"/>
+<wire x1="109.22" y1="124.46" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
 <label x="109.22" y="104.14" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="109.22" y1="111.76" x2="109.22" y2="104.14" width="0.2032" layer="91"/>
-<wire x1="88.9" y1="116.84" x2="88.9" y2="111.76" width="0.2032" layer="91"/>
-<wire x1="88.9" y1="111.76" x2="109.22" y2="111.76" width="0.2032" layer="91"/>
-<wire x1="109.22" y1="111.76" x2="127" y2="111.76" width="0.2032" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="116.84" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="127" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="127" y1="111.76" x2="127" y2="116.84" width="0.2032" layer="91"/>
+<wire x1="127" y1="111.76" x2="127" y2="116.84" width="0.1524" layer="91"/>
 <junction x="109.22" y="111.76"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="121.92" x2="30.48" y2="121.92" width="0.2032" layer="91"/>
+<wire x1="43.18" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
 <label x="30.48" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="134.62" x2="30.48" y2="134.62" width="0.2032" layer="91"/>
+<wire x1="38.1" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
 <label x="30.48" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -2289,13 +2289,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="!RST"/>
-<wire x1="127" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="133.35" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="RAW"/>
@@ -2304,29 +2297,22 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VI"/>
-<wire x1="99.06" y1="132.08" x2="88.9" y2="132.08" width="0.2032" layer="91"/>
+<wire x1="99.06" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
 <label x="68.58" y="132.08" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="88.9" y1="132.08" x2="68.58" y2="132.08" width="0.2032" layer="91"/>
-<wire x1="88.9" y1="132.08" x2="88.9" y2="124.46" width="0.2032" layer="91"/>
+<wire x1="88.9" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="132.08" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
 <junction x="88.9" y="132.08"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="119.38" x2="30.48" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="43.18" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
 <label x="30.48" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="137.16" x2="30.48" y2="137.16" width="0.2032" layer="91"/>
+<wire x1="38.1" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
 <label x="30.48" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="127" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
-<label x="132.08" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2346,10 +2332,10 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <net name="N1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VO"/>
-<wire x1="119.38" y1="132.08" x2="127" y2="132.08" width="0.2032" layer="91"/>
+<wire x1="119.38" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="127" y1="132.08" x2="144.78" y2="132.08" width="0.2032" layer="91"/>
-<wire x1="127" y1="124.46" x2="127" y2="132.08" width="0.2032" layer="91"/>
+<wire x1="127" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="127" y1="124.46" x2="127" y2="132.08" width="0.1524" layer="91"/>
 <junction x="127" y="132.08"/>
 <pinref part="S1" gate="1" pin="P"/>
 </segment>
@@ -2387,14 +2373,11 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </sheets>
 <errors>
 <approved hash="104,1,91.44,93.98,U$1,RAW,VIN,,,"/>
-<approved hash="104,1,127,93.98,U$1,VCC,+3V3,,,"/>
-<approved hash="104,1,127,83.82,U$1,VDDA,AREF,,,"/>
-<approved hash="115,1,200.897,46.8588,IOL,,,,,"/>
-<approved hash="115,1,200.897,82.4188,IOH,,,,,"/>
-<approved hash="115,1,28.9729,64.9012,AD,,,,,"/>
-<approved hash="115,1,29.4929,86.4912,POWER,,,,,"/>
+<approved hash="204,1,127,93.98,U$1,VCC,,,,"/>
+<approved hash="204,1,127,83.82,U$1,VDDA,,,,"/>
 <approved hash="115,1,43.4171,122.051,CN1,,,,,"/>
 <approved hash="115,1,41.3173,134.425,JP1,,,,,"/>
+<approved hash="115,1,148.59,130.818,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
