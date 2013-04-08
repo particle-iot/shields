@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1357,7 +1357,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@2"/>
 <wire x1="91.44" y1="88.9" x2="80.01" y2="88.9" width="0.1524" layer="91"/>
-<label x="80.01" y="88.9" size="1.778" layer="95"/>
+<label x="78.74" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@21"/>
@@ -1366,11 +1366,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="40.64" x2="45.72" y2="40.64" width="0.2032" layer="91"/>
+<wire x1="35.56" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <label x="45.72" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+3V3" class="0">
 <segment>
 <wire x1="29.21" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="POWER" gate="A" pin="3"/>
@@ -1383,32 +1383,32 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.2032" layer="91"/>
+<wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <label x="45.72" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX" class="0">
+<net name="CAMERA_TX" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="38.1" x2="45.72" y2="38.1" width="0.2032" layer="91"/>
+<wire x1="35.56" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <label x="45.72" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="TX"/>
-<wire x1="91.44" y1="83.82" x2="81.28" y2="83.82" width="0.2032" layer="91"/>
-<label x="78.74" y="83.82" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="RX"/>
+<wire x1="91.44" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<label x="72.39" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="CAMERA_RX" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="35.56" x2="45.72" y2="35.56" width="0.2032" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <label x="45.72" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="RX"/>
-<wire x1="91.44" y1="78.74" x2="81.28" y2="78.74" width="0.2032" layer="91"/>
-<label x="78.74" y="78.74" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="TX"/>
+<wire x1="91.44" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<label x="72.39" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

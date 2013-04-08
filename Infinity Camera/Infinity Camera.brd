@@ -13158,15 +13158,18 @@
 <wire x1="10.16" y1="96.52" x2="125.73" y2="96.52" width="0.254" layer="20"/>
 <wire x1="125.73" y1="96.52" x2="125.73" y2="41.91" width="0.254" layer="20"/>
 <wire x1="125.73" y1="41.91" x2="10.16" y2="41.91" width="0.254" layer="20"/>
-<text x="120.65" y="74.93" size="1.778" layer="20" font="vector" ratio="15" rot="R90">+5V</text>
-<text x="123.19" y="78.74" size="1.778" layer="20" font="vector" ratio="15" rot="R90">GND</text>
-<text x="123.19" y="83.82" size="1.778" layer="20" font="vector" ratio="15" rot="R90">TX</text>
-<text x="120.65" y="87.63" size="1.778" layer="20" font="vector" ratio="15" rot="R90">RX</text>
+<text x="120.65" y="73.66" size="1.778" layer="21" font="vector" ratio="15" rot="R90">+3V3</text>
+<text x="123.19" y="78.74" size="1.778" layer="21" font="vector" ratio="15" rot="R90">GND</text>
+<text x="123.19" y="83.82" size="1.778" layer="21" font="vector" ratio="15" rot="R90">TX</text>
+<text x="120.65" y="87.63" size="1.778" layer="21" font="vector" ratio="15" rot="R90">RX</text>
 <wire x1="78.74" y1="46.99" x2="78.74" y2="67.49" width="0.254" layer="21"/>
 <wire x1="78.74" y1="67.49" x2="119.74" y2="67.49" width="0.254" layer="21"/>
 <wire x1="119.74" y1="67.49" x2="119.74" y2="46.99" width="0.254" layer="21"/>
 <wire x1="119.74" y1="46.99" x2="78.74" y2="46.99" width="0.254" layer="21"/>
 <text x="83.82" y="80.01" size="1.778" layer="21" font="vector" ratio="15" rot="R90">USB</text>
+<text x="113.03" y="53.34" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">Spark Infinity Camera
+v0.1
+2013-04-08</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -13765,9 +13768,10 @@ design rules under a new name.</description>
 <element name="U$1" library="Spark" package="SPARK_CORE" value="SPARK_CORECORE" x="97.79" y="82.55" rot="R90"/>
 <element name="U$2" library="Spark" package="SPARK_LOGO" value="" x="7.62" y="5.08"/>
 <element name="JP1" library="SparkFun-Connectors" package="1X04-1.27MM" value="" x="119.38" y="85.09" rot="R270"/>
+<element name="U$3" library="Spark" package="SPARK_LOGO" value="" x="85.09" y="80.01"/>
 </elements>
 <signals>
-<signal name="+5V">
+<signal name="+3V3">
 <contactref element="POWER" pad="3"/>
 <contactref element="U$1" pad="24"/>
 <contactref element="JP1" pad="4"/>
@@ -13810,28 +13814,30 @@ design rules under a new name.</description>
 <signal name="RAW">
 <contactref element="U$1" pad="1"/>
 </signal>
-<signal name="TX">
+<signal name="CAMERA_TX">
 <contactref element="JP1" pad="2"/>
-<contactref element="U$1" pad="3"/>
-<wire x1="116.6368" y1="83.7184" x2="119.0752" y2="83.7184" width="0.254" layer="1"/>
-<wire x1="116.6368" y1="83.312" x2="116.6368" y2="83.7184" width="0.254" layer="16"/>
-<wire x1="110.1344" y1="76.8096" x2="116.6368" y2="83.312" width="0.254" layer="16"/>
-<wire x1="91.44" y1="76.8096" x2="110.1344" y2="76.8096" width="0.254" layer="16"/>
-<wire x1="88.5952" y1="73.9648" x2="91.44" y2="76.8096" width="0.254" layer="16"/>
-<wire x1="119.0752" y1="83.7184" x2="119.38" y2="83.82" width="0.254" layer="1"/>
-<wire x1="88.5952" y1="73.9648" x2="88.9" y2="73.66" width="0.254" layer="16"/>
-<via x="116.6368" y="83.7184" extent="1-16" drill="0.3048"/>
-</signal>
-<signal name="RX">
-<contactref element="JP1" pad="1"/>
 <contactref element="U$1" pad="4"/>
-<wire x1="110.1344" y1="75.9968" x2="119.0752" y2="84.9376" width="0.254" layer="16"/>
-<wire x1="93.0656" y1="75.9968" x2="110.1344" y2="75.9968" width="0.254" layer="16"/>
-<wire x1="91.44" y1="74.3712" x2="93.0656" y2="75.9968" width="0.254" layer="16"/>
-<wire x1="91.44" y1="73.66" x2="91.44" y2="74.3712" width="0.254" layer="16"/>
-<wire x1="119.0752" y1="84.9376" x2="119.38" y2="85.09" width="0.254" layer="16"/>
+<wire x1="91.44" y1="74.93" x2="91.44" y2="73.66" width="0.254" layer="16"/>
+<wire x1="100.33" y1="83.82" x2="91.44" y2="74.93" width="0.254" layer="16"/>
+<wire x1="119.38" y1="83.82" x2="100.33" y2="83.82" width="0.254" layer="16"/>
+</signal>
+<signal name="CAMERA_RX">
+<contactref element="JP1" pad="1"/>
+<contactref element="U$1" pad="3"/>
+<wire x1="88.9" y1="74.93" x2="88.9" y2="73.66" width="0.254" layer="16"/>
+<wire x1="96.52" y1="82.55" x2="88.9" y2="74.93" width="0.254" layer="16"/>
+<wire x1="114.3" y1="82.55" x2="96.52" y2="82.55" width="0.254" layer="1"/>
+<wire x1="118.11" y1="86.36" x2="114.3" y2="82.55" width="0.254" layer="1"/>
+<wire x1="119.38" y1="85.09" x2="118.11" y2="86.36" width="0.254" layer="1"/>
+<via x="96.52" y="82.55" extent="1-16" drill="0.508"/>
 </signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
