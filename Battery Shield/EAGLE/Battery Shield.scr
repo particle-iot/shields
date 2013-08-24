@@ -1,0 +1,6 @@
+# Exported from D:/SparkDevices/shields/Battery Shield/EAGLE/Battery Shield.scr by EAGLE Version 6.3.0 Copyright (c) 1988-2012 CadSoft
+SET UNDO_LOG OFF;
+set wire_bend 2;
+GRID mm;
+SET UNDO_LOG ON;
+GRID LAST;
