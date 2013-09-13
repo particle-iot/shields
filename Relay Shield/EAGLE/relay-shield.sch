@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10621,7 +10621,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="1K"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="1K"/>
-<part name="U$1" library="Spark" deviceset="SPARK_CORE" device=""/>
+<part name="U5" library="Spark" deviceset="SPARK_CORE" device=""/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -10681,7 +10681,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="Spark" deviceset="AP1509-50SG-13" device=""/>
+<part name="U6" library="Spark" deviceset="AP1509-50SG-13" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -10723,7 +10723,7 @@ Libraries by Sparkfun</text>
 <attribute name="NAME" x="19.05" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="19.05" y="128.778" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="195.58" y="132.08"/>
+<instance part="U5" gate="G$1" x="195.58" y="132.08"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="R9" gate="G$1" x="27.94" y="125.73" smashed="yes" rot="R90">
@@ -10832,7 +10832,7 @@ Libraries by Sparkfun</text>
 <instance part="GND11" gate="1" x="208.28" y="44.45"/>
 <instance part="GND14" gate="1" x="227.33" y="44.45"/>
 <instance part="GND17" gate="1" x="158.75" y="63.5"/>
-<instance part="U$2" gate="G$1" x="190.5" y="62.23"/>
+<instance part="U6" gate="G$1" x="190.5" y="62.23"/>
 <instance part="GND18" gate="1" x="234.95" y="44.45"/>
 <instance part="GND13" gate="1" x="190.5" y="44.45"/>
 </instances>
@@ -10844,13 +10844,13 @@ Libraries by Sparkfun</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="177.8" y1="154.94" x2="168.91" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="168.91" y1="154.94" x2="168.91" y2="151.13" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<pinref part="U5" gate="G$1" pin="GND@2"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="223.52" y1="142.24" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND@21"/>
+<pinref part="U5" gate="G$1" pin="GND@21"/>
 </segment>
 <segment>
 <wire x1="34.29" y1="119.38" x2="34.29" y2="127" width="0.1524" layer="91"/>
@@ -10931,21 +10931,21 @@ Libraries by Sparkfun</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SD"/>
+<pinref part="U6" gate="G$1" pin="SD"/>
 <wire x1="180.34" y1="52.07" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="48.26" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND8"/>
+<pinref part="U6" gate="G$1" pin="GND8"/>
 <wire x1="185.42" y1="48.26" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="48.26" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="48.26" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="48.26" x2="200.66" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND5"/>
+<pinref part="U6" gate="G$1" pin="GND5"/>
 <wire x1="185.42" y1="52.07" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
 <junction x="185.42" y="48.26"/>
-<pinref part="U$2" gate="G$1" pin="GND6"/>
+<pinref part="U6" gate="G$1" pin="GND6"/>
 <wire x1="190.5" y1="52.07" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
 <junction x="190.5" y="48.26"/>
-<pinref part="U$2" gate="G$1" pin="GND7"/>
+<pinref part="U6" gate="G$1" pin="GND7"/>
 <wire x1="195.58" y1="52.07" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
 <junction x="195.58" y="48.26"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -10955,7 +10955,7 @@ Libraries by Sparkfun</text>
 <net name="+5V" class="0">
 <segment>
 <wire x1="177.8" y1="160.02" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RAW"/>
+<pinref part="U5" gate="G$1" pin="RAW"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="175.26" y1="172.72" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
 </segment>
@@ -11041,7 +11041,7 @@ Libraries by Sparkfun</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="234.95" y1="57.15" x2="234.95" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="234.95" y1="59.69" x2="227.33" y2="59.69" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="FB"/>
+<pinref part="U6" gate="G$1" pin="FB"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11062,7 +11062,7 @@ Libraries by Sparkfun</text>
 <label x="69.85" y="67.31" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D3"/>
+<pinref part="U5" gate="G$1" pin="D3"/>
 <wire x1="213.36" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
 <label x="217.17" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -11074,7 +11074,7 @@ Libraries by Sparkfun</text>
 <label x="6.35" y="67.31" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D2"/>
+<pinref part="U5" gate="G$1" pin="D2"/>
 <wire x1="213.36" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
 <label x="217.17" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -11086,7 +11086,7 @@ Libraries by Sparkfun</text>
 <label x="71.12" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D1"/>
+<pinref part="U5" gate="G$1" pin="D1"/>
 <wire x1="213.36" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
 <label x="217.17" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -11098,7 +11098,7 @@ Libraries by Sparkfun</text>
 <label x="6.35" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D0"/>
+<pinref part="U5" gate="G$1" pin="D0"/>
 <wire x1="213.36" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 <label x="217.17" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -11353,103 +11353,103 @@ Libraries by Sparkfun</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D4"/>
+<pinref part="U5" gate="G$1" pin="D4"/>
 <wire x1="213.36" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D5"/>
+<pinref part="U5" gate="G$1" pin="D5"/>
 <wire x1="213.36" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D6"/>
+<pinref part="U5" gate="G$1" pin="D6"/>
 <wire x1="213.36" y1="134.62" x2="215.9" y2="134.62" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D7"/>
+<pinref part="U5" gate="G$1" pin="D7"/>
 <wire x1="213.36" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDDA"/>
+<pinref part="U5" gate="G$1" pin="VDDA"/>
 <wire x1="213.36" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="!RST"/>
+<pinref part="U5" gate="G$1" pin="!RST"/>
 <wire x1="213.36" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U5" gate="G$1" pin="VCC"/>
 <wire x1="213.36" y1="160.02" x2="215.9" y2="160.02" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A0"/>
+<pinref part="U5" gate="G$1" pin="A0"/>
 <wire x1="177.8" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A1"/>
+<pinref part="U5" gate="G$1" pin="A1"/>
 <wire x1="177.8" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A2"/>
+<pinref part="U5" gate="G$1" pin="A2"/>
 <wire x1="177.8" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A3"/>
+<pinref part="U5" gate="G$1" pin="A3"/>
 <wire x1="177.8" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A4"/>
+<pinref part="U5" gate="G$1" pin="A4"/>
 <wire x1="177.8" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A5"/>
+<pinref part="U5" gate="G$1" pin="A5"/>
 <wire x1="177.8" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A6"/>
+<pinref part="U5" gate="G$1" pin="A6"/>
 <wire x1="177.8" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A7"/>
+<pinref part="U5" gate="G$1" pin="A7"/>
 <wire x1="177.8" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RX"/>
+<pinref part="U5" gate="G$1" pin="RX"/>
 <wire x1="177.8" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="TX"/>
+<pinref part="U5" gate="G$1" pin="TX"/>
 <wire x1="177.8" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91" style="dashdot"/>
 </segment>
 </net>
@@ -11461,7 +11461,7 @@ Libraries by Sparkfun</text>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="172.72" y1="64.77" x2="171.45" y2="64.77" width="0.1524" layer="91"/>
 <junction x="172.72" y="64.77"/>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
+<pinref part="U6" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -11470,7 +11470,7 @@ Libraries by Sparkfun</text>
 <wire x1="208.28" y1="59.69" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="209.55" y1="59.69" x2="208.28" y2="59.69" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<pinref part="U6" gate="G$1" pin="VOUT"/>
 <wire x1="208.28" y1="59.69" x2="208.28" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="64.77" x2="205.74" y2="64.77" width="0.1524" layer="91"/>
 <junction x="208.28" y="59.69"/>
