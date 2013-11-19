@@ -234,6 +234,25 @@ sparkdevices.com</text>
 <wire x1="26.162" y1="18.034" x2="26.162" y2="17.018" width="0" layer="20" curve="180"/>
 <text x="44.2976" y="0.1524" size="1.778" layer="21">+</text>
 <text x="46.8884" y="0.1524" size="1.778" layer="21">-</text>
+<text x="127" y="12.7" size="2.54" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="121.92" y1="-2.54" x2="121.92" y2="83.82" width="0.4064" layer="51"/>
+<wire x1="121.92" y1="83.82" x2="302.26" y2="83.82" width="0.4064" layer="51"/>
+<wire x1="302.26" y1="83.82" x2="302.26" y2="-2.54" width="0.4064" layer="51"/>
+<wire x1="302.26" y1="-2.54" x2="121.92" y2="-2.54" width="0.4064" layer="51"/>
 </plain>
 <libraries>
 <library name="Spark">

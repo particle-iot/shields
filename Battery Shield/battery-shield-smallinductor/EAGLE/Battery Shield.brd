@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -202,6 +202,25 @@ Shield</text>
 <wire x1="69.215" y1="0.762" x2="45.974" y2="4.445" width="0.0254" layer="20" curve="-45.604807"/>
 <wire x1="72.009" y1="2.159" x2="69.215" y2="0.762" width="0.0254" layer="20" curve="-13.69593"/>
 <text x="36.2712" y="0.4318" size="1.778" layer="22" rot="MR0">+</text>
+<text x="96.52" y="2.54" size="1.27" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="93.98" y1="0" x2="93.98" y2="33.02" width="0.4064" layer="51"/>
+<wire x1="93.98" y1="33.02" x2="177.8" y2="33.02" width="0.4064" layer="51"/>
+<wire x1="177.8" y1="33.02" x2="177.8" y2="0" width="0.4064" layer="51"/>
+<wire x1="177.8" y1="0" x2="93.98" y2="0" width="0.4064" layer="51"/>
 </plain>
 <libraries>
 <library name="Spark">

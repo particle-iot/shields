@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3585,8 +3585,23 @@ of the 10K NTC thermistor</text>
 <wire x1="228.6" y1="81.28" x2="228.6" y2="76.2" width="0.0508" layer="95"/>
 <wire x1="228.6" y1="76.2" x2="208.28" y2="76.2" width="0.0508" layer="95"/>
 <text x="149.86" y="25.4" size="6.4516" layer="94">Spark Devices</text>
-<text x="7.62" y="7.62" size="2.54" layer="94">Battery Shield design by Spark Devices
+<text x="109.22" y="2.54" size="1.27" layer="95">Battery Shield design by Spark Devices
 Component libraries by Adafruit and Sparkfun</text>
+<text x="7.62" y="5.08" size="1.778" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

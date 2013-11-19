@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10708,6 +10708,25 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <text x="2.54" y="5.08" size="3.81" layer="94">Relay Shield design by Spark Devices
 Libraries by Sparkfun</text>
 <text x="237.49" y="6.35" size="2.54" layer="94">v2.0</text>
+<text x="259.08" y="5.08" size="1.778" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="254" y1="0" x2="254" y2="48.26" width="0.2032" layer="94"/>
+<wire x1="254" y1="48.26" x2="381" y2="48.26" width="0.2032" layer="94"/>
+<wire x1="381" y1="48.26" x2="381" y2="0" width="0.2032" layer="94"/>
+<wire x1="381" y1="0" x2="254" y2="0" width="0.2032" layer="94"/>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="168.91" y="148.59"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -13598,6 +13598,25 @@ INPUT VOLTAGE
 
 NOT CONNECTED
 </text>
+<text x="121.92" y="5.08" size="1.778" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+ OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="119.38" y1="0" x2="119.38" y2="53.34" width="0.4064" layer="51"/>
+<wire x1="119.38" y1="53.34" x2="243.84" y2="53.34" width="0.4064" layer="51"/>
+<wire x1="243.84" y1="53.34" x2="243.84" y2="0" width="0.4064" layer="51"/>
+<wire x1="243.84" y1="0" x2="119.38" y2="0" width="0.4064" layer="51"/>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -16262,63 +16281,6 @@ design rules under a new name.</description>
 <wire x1="86.194" y1="22.772" x2="86.36" y2="22.606" width="0.3048" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="1,20,c2f207100671c393"/>
-<approved hash="1,20,6207e6e5e4c76025"/>
-<approved hash="1,20,e1c4a4a6a587e0e5"/>
-<approved hash="1,20,7df3b911b8ff7c1d"/>
-<approved hash="1,20,6281a7e3a18164e3"/>
-<approved hash="1,20,61c5002702c76325"/>
-<approved hash="1,20,7531a8d3aa937771"/>
-<approved hash="1,20,d33210d01290d172"/>
-<approved hash="1,20,62b2e1d0e39760f5"/>
-<approved hash="1,20,635b60b96e966d74"/>
-<approved hash="1,20,604741a541826060"/>
-<approved hash="1,20,6231a753a49161f3"/>
-<approved hash="1,20,61ffe01de10360e1"/>
-<approved hash="1,20,ddfc181e1900dce2"/>
-<approved hash="1,20,7184b166b04270a0"/>
-<approved hash="1,20,2184e566e45e20bc"/>
-<approved hash="1,20,7492f770f6737591"/>
-<approved hash="1,20,948d176f166f958d"/>
-<approved hash="1,20,649d677f667f659d"/>
-<approved hash="1,20,a15a20b82e95af77"/>
-<approved hash="1,20,7559f8bbf6947b76"/>
-<approved hash="1,20,66b7075506966774"/>
-<approved hash="1,20,730250e056827560"/>
-<approved hash="1,20,7383d361d04070a2"/>
-<approved hash="1,20,234220a021822260"/>
-<approved hash="1,20,6242bea0bf8d636f"/>
-<approved hash="1,20,2495e777e6762594"/>
-<approved hash="1,20,e0e20100028de36f"/>
-<approved hash="1,20,7501b8e3b6c17b23"/>
-<approved hash="1,20,53c230200fc36c21"/>
-<approved hash="1,20,74f2b910baf67714"/>
-<approved hash="1,20,62cb6229604e60ac"/>
-<approved hash="1,20,611d00ff0e916f73"/>
-<approved hash="1,20,65856167604664a4"/>
-<approved hash="1,20,6397677560776495"/>
-<approved hash="1,20,634567a767846366"/>
-<approved hash="1,20,6391677360716493"/>
-<approved hash="1,20,e27a671879c1fca3"/>
-<approved hash="1,20,61842d662c4260a0"/>
-<approved hash="1,20,551028f22af25710"/>
-<approved hash="1,20,e2b0a7d2a19ee4fc"/>
-<approved hash="1,20,2d30e8d2ee8e2b6c"/>
-<approved hash="1,20,73ccb02eb2817163"/>
-<approved hash="1,20,d30b33e933afd34d"/>
-<approved hash="1,20,23022660219f24fd"/>
-<approved hash="1,20,a20d62ef609ea07c"/>
-<approved hash="1,20,2240272227462224"/>
-<approved hash="1,20,ddb218501996dc74"/>
-<approved hash="1,20,92b3725173939371"/>
-<approved hash="1,20,76f3fb11fa737791"/>
-<approved hash="5,1,0120732726bba0b0"/>
-<approved hash="5,1,6bd7f6a86dbf7606"/>
-<approved hash="5,1,0eb97067277bad19"/>
-<approved hash="5,1,9aca98d988cbe2de"/>
-<approved hash="5,1,56ca98db78c9f6dd"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10767,6 +10767,25 @@ Original Arduino design by Team Arduino</text>
 <wire x1="86.36" y1="27.94" x2="129.54" y2="27.94" width="0.2032" layer="94"/>
 <text x="6.35" y="99.06" size="1.778" layer="94" font="vector">3.4V Zener</text>
 <text x="237.49" y="6.35" size="2.54" layer="94" font="vector">v2.0</text>
+<text x="5.08" y="48.26" size="1.27" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+ OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="2.54" y1="83.82" x2="83.82" y2="83.82" width="0.2032" layer="95" style="shortdash"/>
+<wire x1="83.82" y1="83.82" x2="83.82" y2="40.64" width="0.2032" layer="95" style="shortdash"/>
+<wire x1="83.82" y1="40.64" x2="2.54" y2="40.64" width="0.2032" layer="95" style="shortdash"/>
+<wire x1="2.54" y1="40.64" x2="2.54" y2="83.82" width="0.2032" layer="95" style="shortdash"/>
 </plain>
 <instances>
 <instance part="IOL" gate="A" x="43.18" y="121.92" smashed="yes" rot="R180">

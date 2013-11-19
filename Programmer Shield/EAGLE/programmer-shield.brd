@@ -153,6 +153,25 @@ sparkdevices.com</text>
 <wire x1="0" y1="2.54" x2="0" y2="36.83" width="0" layer="20"/>
 <dimension x1="3.81" y1="3.81" x2="3.81" y2="35.56" x3="-2.54" y3="19.685" layer="51"/>
 <dimension x1="3.81" y1="35.56" x2="59.69" y2="35.56" x3="31.75" y3="41.91" layer="51"/>
+<text x="109.22" y="5.08" size="1.4224" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="104.14" y1="0" x2="104.14" y2="38.1" width="0.4064" layer="51"/>
+<wire x1="104.14" y1="38.1" x2="208.28" y2="38.1" width="0.4064" layer="51"/>
+<wire x1="208.28" y1="38.1" x2="208.28" y2="0" width="0.4064" layer="51"/>
+<wire x1="208.28" y1="0" x2="104.14" y2="0" width="0.4064" layer="51"/>
 </plain>
 <libraries>
 <library name="con-harting-ml">
