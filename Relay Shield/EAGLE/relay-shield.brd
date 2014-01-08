@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -141,8 +141,8 @@
 <board>
 <plain>
 <wire x1="86.36" y1="83.82" x2="2.54" y2="83.82" width="0" layer="20"/>
-<text x="78.486" y="77.724" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">Relay Shield v2.0
-sparkdevices.com</text>
+<text x="78.486" y="77.724" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">Relay Shield v2.0.1
+spark.io</text>
 <hole x="3.81" y="80.01" drill="3.2"/>
 <hole x="85.09" y="80.01" drill="3.2"/>
 <hole x="85.09" y="3.81" drill="3.2"/>
@@ -188,10 +188,10 @@ sparkdevices.com</text>
 <wire x1="0" y1="81.28" x2="2.54" y2="83.82" width="0" layer="20"/>
 <wire x1="86.36" y1="83.82" x2="88.9" y2="81.28" width="0" layer="20"/>
 <wire x1="86.36" y1="0" x2="88.9" y2="2.54" width="0" layer="20"/>
-<dimension x1="7.62" y1="83.82" x2="7.62" y2="0" x3="-5.08" y3="41.91" layer="51"/>
-<dimension x1="85.09" y1="80.01" x2="85.09" y2="3.81" x3="95.25" y3="41.91" layer="51"/>
-<dimension x1="3.81" y1="80.01" x2="85.09" y2="80.01" x3="44.45" y3="87.63" layer="51" dtype="diameter"/>
-<dimension x1="0" y1="0" x2="88.9" y2="0" x3="44.45" y3="-10.16" layer="51" dtype="horizontal"/>
+<dimension x1="7.62" y1="83.82" x2="7.62" y2="0" x3="-5.08" y3="41.91" textsize="3.5" layer="51"/>
+<dimension x1="85.09" y1="80.01" x2="85.09" y2="3.81" x3="95.25" y3="41.91" textsize="3.5" layer="51"/>
+<dimension x1="3.81" y1="80.01" x2="85.09" y2="80.01" x3="44.45" y3="87.63" textsize="3.5" layer="51" dtype="diameter"/>
+<dimension x1="0" y1="0" x2="88.9" y2="0" x3="44.45" y3="-10.16" textsize="3.5" layer="51" dtype="horizontal"/>
 <wire x1="26.162" y1="70.358" x2="29.972" y2="70.358" width="0" layer="20"/>
 <wire x1="29.972" y1="70.358" x2="31.75" y2="68.58" width="0" layer="20" curve="-90"/>
 <wire x1="31.75" y1="68.58" x2="29.972" y2="66.802" width="0" layer="20" curve="-90"/>
@@ -329,11 +329,11 @@ Spark is a registered trademark.</text>
 </package>
 <package name="JS1-5V-F">
 <description>RELAY GEN PURPOSE SPST 10A 5V</description>
-<pad name="COIL2" x="6.275" y="-5.875" drill="1.1"/>
-<pad name="COIL1" x="6.275" y="5.875" drill="1.1"/>
-<pad name="OPEN" x="-6.275" y="5.875" drill="1.1"/>
-<pad name="COMMON" x="8.225" y="0" drill="1.1"/>
-<pad name="CLOSED" x="-6.275" y="-5.875" drill="1.1"/>
+<pad name="COIL2" x="6.096" y="-5.9944" drill="1.1"/>
+<pad name="COIL1" x="6.096" y="5.9944" drill="1.1"/>
+<pad name="OPEN" x="-6.096" y="5.9944" drill="1.1"/>
+<pad name="COMMON" x="8.1026" y="0" drill="1.1"/>
+<pad name="CLOSED" x="-6.096" y="-5.9944" drill="1.1"/>
 <wire x1="-11.475" y1="-8" x2="10.525" y2="-8" width="0.127" layer="21"/>
 <wire x1="10.525" y1="-8" x2="10.525" y2="8" width="0.127" layer="21"/>
 <wire x1="10.525" y1="8" x2="-11.475" y2="8" width="0.127" layer="21"/>
@@ -1172,10 +1172,10 @@ design rules under a new name.</description>
 <contactref element="C6" pad="+"/>
 <contactref element="L1" pad="P$2"/>
 <contactref element="R13" pad="2"/>
-<wire x1="27.865" y1="74.455" x2="30.955" y2="74.455" width="0.8128" layer="1"/>
-<wire x1="27.865" y1="56.675" x2="30.955" y2="56.675" width="0.8128" layer="1"/>
-<wire x1="27.865" y1="38.895" x2="30.955" y2="38.895" width="0.8128" layer="1"/>
-<wire x1="27.865" y1="21.115" x2="30.955" y2="21.115" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="74.5744" x2="30.955" y2="74.455" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="56.7944" x2="30.955" y2="56.675" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="39.0144" x2="30.955" y2="38.895" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="21.2344" x2="30.955" y2="21.115" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="52.236" x2="38.608" y2="50.8" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="50.8" x2="38.608" y2="48.89" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="34.456" x2="38.608" y2="33.02" width="0.8128" layer="1"/>
@@ -1314,19 +1314,19 @@ design rules under a new name.</description>
 <signal name="NC1">
 <contactref element="U1" pad="CLOSED"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="3.81" y1="63.66" x2="15.315" y2="62.705" width="2.54" layer="1"/>
+<wire x1="3.81" y1="63.66" x2="15.494" y2="62.5856" width="2.54" layer="1"/>
 <wire x1="3.81" y1="63.66" x2="15.24" y2="62.738" width="2.54" layer="16"/>
 </signal>
 <signal name="MAIN1">
 <contactref element="JP1" pad="2"/>
 <contactref element="U1" pad="COMMON"/>
-<wire x1="3.81" y1="68.66" x2="29.815" y2="68.58" width="2.54" layer="1"/>
+<wire x1="3.81" y1="68.66" x2="29.6926" y2="68.58" width="2.54" layer="1"/>
 <wire x1="3.81" y1="68.66" x2="29.718" y2="68.58" width="2.54" layer="16"/>
 </signal>
 <signal name="NO1">
 <contactref element="U1" pad="OPEN"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="3.81" y1="73.66" x2="15.315" y2="74.455" width="2.54" layer="1"/>
+<wire x1="3.81" y1="73.66" x2="15.494" y2="74.5744" width="2.54" layer="1"/>
 <wire x1="3.81" y1="73.66" x2="15.24" y2="74.422" width="2.54" layer="16"/>
 </signal>
 <signal name="N$1">
@@ -1336,7 +1336,7 @@ design rules under a new name.</description>
 <contactref element="D5" pad="A"/>
 <wire x1="42.164" y1="62.908" x2="42.126" y2="62.87" width="0.6096" layer="1"/>
 <wire x1="42.126" y1="62.87" x2="38.608" y2="62.87" width="0.6096" layer="1"/>
-<wire x1="27.865" y1="62.705" x2="38.443" y2="62.705" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="62.5856" x2="38.443" y2="62.705" width="0.8128" layer="1"/>
 <wire x1="38.443" y1="62.705" x2="38.608" y2="62.87" width="0.8128" layer="1"/>
 <wire x1="42.914" y1="71.882" x2="44.958" y2="71.882" width="0.6096" layer="1"/>
 <wire x1="42.164" y1="62.908" x2="44.874" y2="62.908" width="0.6096" layer="1"/>
@@ -1369,7 +1369,7 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="C"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="D6" pad="A"/>
-<wire x1="27.865" y1="44.925" x2="38.443" y2="44.925" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="44.8056" x2="38.443" y2="44.925" width="0.8128" layer="1"/>
 <wire x1="38.443" y1="44.925" x2="38.608" y2="45.09" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="45.09" x2="42.126" y2="45.09" width="0.8128" layer="1"/>
 <wire x1="42.126" y1="45.09" x2="42.164" y2="45.128" width="0.8128" layer="1"/>
@@ -1389,19 +1389,19 @@ design rules under a new name.</description>
 <signal name="NC2">
 <contactref element="U2" pad="CLOSED"/>
 <contactref element="JP2" pad="3"/>
-<wire x1="3.81" y1="45.88" x2="15.315" y2="44.925" width="2.54" layer="1"/>
+<wire x1="3.81" y1="45.88" x2="15.494" y2="44.8056" width="2.54" layer="1"/>
 <wire x1="3.81" y1="45.88" x2="15.24" y2="44.958" width="2.54" layer="16"/>
 </signal>
 <signal name="MAIN2">
 <contactref element="JP2" pad="2"/>
 <contactref element="U2" pad="COMMON"/>
-<wire x1="3.81" y1="50.88" x2="29.815" y2="50.8" width="2.54" layer="1"/>
+<wire x1="3.81" y1="50.88" x2="29.6926" y2="50.8" width="2.54" layer="1"/>
 <wire x1="3.81" y1="50.88" x2="29.718" y2="50.8" width="2.54" layer="16"/>
 </signal>
 <signal name="NO2">
 <contactref element="U2" pad="OPEN"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="3.81" y1="55.88" x2="15.315" y2="56.675" width="2.54" layer="1"/>
+<wire x1="3.81" y1="55.88" x2="15.494" y2="56.7944" width="2.54" layer="1"/>
 <wire x1="3.81" y1="55.88" x2="15.24" y2="56.642" width="2.54" layer="16"/>
 </signal>
 <signal name="N$7">
@@ -1422,7 +1422,7 @@ design rules under a new name.</description>
 <contactref element="LED3" pad="C"/>
 <contactref element="Q3" pad="3"/>
 <contactref element="D7" pad="A"/>
-<wire x1="27.865" y1="27.145" x2="38.443" y2="27.145" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="27.0256" x2="38.443" y2="27.145" width="0.8128" layer="1"/>
 <wire x1="38.443" y1="27.145" x2="38.608" y2="27.31" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="27.31" x2="42.38" y2="27.31" width="0.8128" layer="1"/>
 <wire x1="42.38" y1="27.31" x2="42.418" y2="27.348" width="0.8128" layer="1"/>
@@ -1442,19 +1442,19 @@ design rules under a new name.</description>
 <signal name="NC3">
 <contactref element="U3" pad="CLOSED"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="3.81" y1="28.1" x2="15.315" y2="27.145" width="2.54" layer="1"/>
+<wire x1="3.81" y1="28.1" x2="15.494" y2="27.0256" width="2.54" layer="1"/>
 <wire x1="3.81" y1="28.1" x2="15.24" y2="27.178" width="2.54" layer="16"/>
 </signal>
 <signal name="MAIN3">
 <contactref element="JP3" pad="2"/>
 <contactref element="U3" pad="COMMON"/>
-<wire x1="3.81" y1="33.1" x2="29.815" y2="33.02" width="2.54" layer="1"/>
+<wire x1="3.81" y1="33.1" x2="29.6926" y2="33.02" width="2.54" layer="1"/>
 <wire x1="3.81" y1="33.1" x2="29.718" y2="33.02" width="2.54" layer="16"/>
 </signal>
 <signal name="NO3">
 <contactref element="U3" pad="OPEN"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="3.81" y1="38.1" x2="15.315" y2="38.895" width="2.54" layer="1"/>
+<wire x1="3.81" y1="38.1" x2="15.494" y2="39.0144" width="2.54" layer="1"/>
 <wire x1="3.81" y1="38.1" x2="15.24" y2="38.862" width="2.54" layer="16"/>
 </signal>
 <signal name="N$10">
@@ -1475,7 +1475,7 @@ design rules under a new name.</description>
 <contactref element="LED4" pad="C"/>
 <contactref element="Q4" pad="3"/>
 <contactref element="D8" pad="A"/>
-<wire x1="27.865" y1="9.365" x2="38.443" y2="9.365" width="0.8128" layer="1"/>
+<wire x1="27.686" y1="9.2456" x2="38.443" y2="9.365" width="0.8128" layer="1"/>
 <wire x1="38.443" y1="9.365" x2="38.608" y2="9.53" width="0.8128" layer="1"/>
 <wire x1="38.608" y1="9.53" x2="42.38" y2="9.53" width="0.8128" layer="1"/>
 <wire x1="42.38" y1="9.53" x2="42.418" y2="9.568" width="0.8128" layer="1"/>
@@ -1495,19 +1495,19 @@ design rules under a new name.</description>
 <signal name="NC4">
 <contactref element="U4" pad="CLOSED"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="3.81" y1="10.32" x2="15.315" y2="9.365" width="2.54" layer="1"/>
+<wire x1="3.81" y1="10.32" x2="15.494" y2="9.2456" width="2.54" layer="1"/>
 <wire x1="3.81" y1="10.32" x2="15.24" y2="9.398" width="2.54" layer="16"/>
 </signal>
 <signal name="MAIN4">
 <contactref element="JP4" pad="2"/>
 <contactref element="U4" pad="COMMON"/>
-<wire x1="3.81" y1="15.32" x2="29.815" y2="15.24" width="2.54" layer="1"/>
+<wire x1="3.81" y1="15.32" x2="29.6926" y2="15.24" width="2.54" layer="1"/>
 <wire x1="3.81" y1="15.32" x2="29.718" y2="15.24" width="2.54" layer="16"/>
 </signal>
 <signal name="NO4">
 <contactref element="U4" pad="OPEN"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="3.81" y1="20.32" x2="15.315" y2="21.115" width="2.54" layer="1"/>
+<wire x1="3.81" y1="20.32" x2="15.494" y2="21.2344" width="2.54" layer="1"/>
 <wire x1="3.81" y1="20.32" x2="15.24" y2="21.082" width="2.54" layer="16"/>
 </signal>
 <signal name="N$16">
