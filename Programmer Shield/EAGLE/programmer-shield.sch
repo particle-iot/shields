@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5209,7 +5209,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="53.34" y="78.74" size="1.778" layer="97">JTAG Interface</text>
 <text x="167.64" y="137.16" size="1.778" layer="97">Spark Core</text>
 <text x="149.86" y="27.94" size="3.81" layer="94">Spark Programming Shield</text>
-<text x="236.22" y="6.35" size="2.54" layer="94">v2.0</text>
+<text x="236.22" y="6.35" size="2.54" layer="94">v2.0.1</text>
 <text x="5.08" y="2.54" size="1.778" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
 ("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
 PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 

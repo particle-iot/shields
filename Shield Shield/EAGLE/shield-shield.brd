@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="2" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="2" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="5" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="49" name="ReferenceLC" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="ReferenceLS" color="12" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -13178,8 +13178,8 @@
 <hole x="66.04" y="7.62" drill="3.2"/>
 <hole x="15.24" y="50.8" drill="3.2"/>
 <hole x="13.97" y="2.54" drill="3.2"/>
-<text x="77.216" y="12.446" size="1.778" layer="22" font="vector" ratio="15" rot="MR90">Shield Shield v2.0
-sparkdevices.com
+<text x="77.216" y="12.446" size="1.778" layer="22" font="vector" ratio="15" rot="MR90">Shield Shield v2.0.1
+spark.io
 </text>
 <wire x1="68.58" y1="2.54" x2="93.726" y2="2.54" width="0" layer="20"/>
 <wire x1="93.726" y1="2.54" x2="96.266" y2="5.08" width="0" layer="20"/>
@@ -13538,8 +13538,8 @@ VOL</text>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="34.29" width="0.2032" layer="22"/>
 <wire x1="26.67" y1="7.62" x2="26.67" y2="34.29" width="0.2032" layer="22"/>
 <wire x1="20.32" y1="7.62" x2="20.32" y2="34.29" width="0.2032" layer="22"/>
-<dimension x1="96.266" y1="42.672" x2="0" y2="46.482" x3="48.133" y3="56.642" layer="51" dtype="horizontal"/>
-<dimension x1="2.54" y1="0" x2="2.54" y2="53.34" x3="-5.588" y3="26.67" layer="51" dtype="vertical"/>
+<dimension x1="96.266" y1="42.672" x2="0" y2="46.482" x3="48.133" y3="56.642" textsize="3.5" layer="51" dtype="horizontal"/>
+<dimension x1="2.54" y1="0" x2="2.54" y2="53.34" x3="-5.588" y3="26.67" textsize="3.5" layer="51" dtype="vertical"/>
 <text x="16.51" y="8.89" size="1.016" layer="22" ratio="15" rot="MR90">0
 1
 2

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -135,14 +135,14 @@
 </layers>
 <board>
 <plain>
-<text x="56.388" y="33.782" size="1.778" layer="22" font="vector" ratio="10" rot="MR0">Programmer Shield v2.0
-sparkdevices.com</text>
+<text x="56.388" y="33.782" size="1.778" layer="22" font="vector" ratio="10" rot="MR0">Programmer Shield v2.0.1
+spark.io</text>
 <hole x="59.69" y="35.56" drill="3.2"/>
 <hole x="59.69" y="3.81" drill="3.2"/>
 <hole x="3.81" y="3.81" drill="3.2"/>
 <hole x="3.81" y="35.56" drill="3.2"/>
-<dimension x1="0" y1="-2.54" x2="63.5" y2="-2.54" x3="31.75" y3="-6.35" layer="51"/>
-<dimension x1="63.5" y1="0" x2="63.5" y2="39.37" x3="69.85" y3="19.685" layer="51"/>
+<dimension x1="0" y1="-2.54" x2="63.5" y2="-2.54" x3="31.75" y3="-6.35" textsize="3.5" layer="51"/>
+<dimension x1="63.5" y1="0" x2="63.5" y2="39.37" x3="69.85" y3="19.685" textsize="3.5" layer="51"/>
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0" layer="20"/>
 <wire x1="0" y1="36.83" x2="2.54" y2="39.37" width="0" layer="20"/>
 <wire x1="63.5" y1="36.83" x2="60.96" y2="39.37" width="0" layer="20"/>
@@ -151,8 +151,8 @@ sparkdevices.com</text>
 <wire x1="63.5" y1="2.54" x2="63.5" y2="36.83" width="0" layer="20"/>
 <wire x1="2.54" y1="39.37" x2="60.96" y2="39.37" width="0" layer="20"/>
 <wire x1="0" y1="2.54" x2="0" y2="36.83" width="0" layer="20"/>
-<dimension x1="3.81" y1="3.81" x2="3.81" y2="35.56" x3="-2.54" y3="19.685" layer="51"/>
-<dimension x1="3.81" y1="35.56" x2="59.69" y2="35.56" x3="31.75" y3="41.91" layer="51"/>
+<dimension x1="3.81" y1="3.81" x2="3.81" y2="35.56" x3="-2.54" y3="19.685" textsize="3.5" layer="51"/>
+<dimension x1="3.81" y1="35.56" x2="59.69" y2="35.56" x3="31.75" y3="41.91" textsize="3.5" layer="51"/>
 <text x="109.22" y="5.08" size="1.4224" layer="51">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
 ("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
 PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
