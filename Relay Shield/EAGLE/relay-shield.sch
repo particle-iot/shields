@@ -10642,16 +10642,16 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MPSA42" value="MPSA42"/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MPSA42" value="MPSA42"/>
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MPSA42" value="MPSA42"/>
+<part name="D3" library="diode" deviceset="DIODE-" device="SOD123"/>
+<part name="D4" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="D5" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="D6" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="D7" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="D8" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="10nF"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF, 16V"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="56uF, 10V"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="10nF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF, 16V"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="56uF, 10V"/>
 <part name="D1" library="adafruit" deviceset="DIODE" device="SMA" value="B230"/>
 <part name="D2" library="adafruit" deviceset="DIODE" device="SMA" value="B230"/>
-<part name="U6" library="Spark" deviceset="LM2672" device=""/>
+<part name="U5" library="Spark" deviceset="LM2672" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -10784,19 +10784,19 @@ Libraries by Sparkfun</text>
 <instance part="Q2" gate="G$1" x="96.52" y="132.08"/>
 <instance part="Q3" gate="G$1" x="31.75" y="67.31"/>
 <instance part="Q4" gate="G$1" x="95.25" y="67.31"/>
-<instance part="D5" gate="G$1" x="30.48" y="149.86" rot="R90"/>
-<instance part="D6" gate="G$1" x="95.25" y="149.86" rot="R90"/>
-<instance part="D7" gate="G$1" x="30.48" y="85.09" rot="R90"/>
-<instance part="D8" gate="G$1" x="93.98" y="85.09" rot="R90"/>
-<instance part="C4" gate="G$1" x="212.09" y="69.85" rot="R90"/>
-<instance part="C5" gate="G$1" x="172.72" y="54.61"/>
-<instance part="C6" gate="G$1" x="233.68" y="54.61" rot="MR0"/>
+<instance part="D3" gate="G$1" x="30.48" y="149.86" rot="R90"/>
+<instance part="D4" gate="G$1" x="95.25" y="149.86" rot="R90"/>
+<instance part="D5" gate="G$1" x="30.48" y="85.09" rot="R90"/>
+<instance part="D6" gate="G$1" x="93.98" y="85.09" rot="R90"/>
+<instance part="C3" gate="G$1" x="212.09" y="69.85" rot="R90"/>
+<instance part="C4" gate="G$1" x="172.72" y="54.61"/>
+<instance part="C5" gate="G$1" x="233.68" y="54.61" rot="MR0"/>
 <instance part="D1" gate="G$1" x="215.9" y="54.61" rot="R90"/>
 <instance part="D2" gate="G$1" x="163.83" y="64.77" smashed="yes">
 <attribute name="NAME" x="161.29" y="67.31" size="1.778" layer="95"/>
 <attribute name="VALUE" x="165.1" y="67.31" size="1.778" layer="96"/>
 </instance>
-<instance part="U6" gate="G$1" x="185.42" y="72.39"/>
+<instance part="U5" gate="G$1" x="185.42" y="72.39"/>
 <instance part="GND11" gate="1" x="215.9" y="44.45"/>
 <instance part="GND14" gate="1" x="233.68" y="44.45"/>
 <instance part="GND17" gate="1" x="156.21" y="63.5"/>
@@ -10871,12 +10871,12 @@ Libraries by Sparkfun</text>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="193.04" y1="46.99" x2="193.04" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="-"/>
+<pinref part="C4" gate="G$1" pin="-"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="172.72" y1="46.99" x2="172.72" y2="49.53" width="0.1524" layer="91"/>
 </segment>
@@ -10894,7 +10894,7 @@ Libraries by Sparkfun</text>
 <wire x1="215.9" y1="46.99" x2="215.9" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="-"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="233.68" y1="46.99" x2="233.68" y2="49.53" width="0.1524" layer="91"/>
 </segment>
@@ -10936,7 +10936,7 @@ Libraries by Sparkfun</text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="167.64" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
 <junction x="27.94" y="162.56"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="COIL1"/>
@@ -10952,7 +10952,7 @@ Libraries by Sparkfun</text>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="92.71" y1="167.64" x2="92.71" y2="162.56" width="0.1524" layer="91"/>
 <junction x="92.71" y="162.56"/>
-<pinref part="D6" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="COIL1"/>
@@ -10968,7 +10968,7 @@ Libraries by Sparkfun</text>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="102.87" x2="27.94" y2="97.79" width="0.1524" layer="91"/>
 <junction x="27.94" y="97.79"/>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="COIL1"/>
@@ -10984,12 +10984,12 @@ Libraries by Sparkfun</text>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="91.44" y1="102.87" x2="91.44" y2="97.79" width="0.1524" layer="91"/>
 <junction x="91.44" y="97.79"/>
-<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="FB"/>
+<pinref part="U5" gate="G$1" pin="FB"/>
 <wire x1="195.58" y1="77.47" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="+"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="195.58" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="78.74" x2="233.68" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="59.69" x2="233.68" y2="57.15" width="0.1524" layer="91"/>
@@ -11105,7 +11105,7 @@ Libraries by Sparkfun</text>
 <wire x1="22.86" y1="139.7" x2="34.29" y2="139.7" width="0.1524" layer="91"/>
 <junction x="34.29" y="139.7"/>
 <pinref part="Q1" gate="G$1" pin="C"/>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -11140,7 +11140,7 @@ Libraries by Sparkfun</text>
 <wire x1="87.63" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
 <junction x="99.06" y="139.7"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
-<pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -11203,7 +11203,7 @@ Libraries by Sparkfun</text>
 <wire x1="22.86" y1="74.93" x2="34.29" y2="74.93" width="0.1524" layer="91"/>
 <junction x="34.29" y="74.93"/>
 <pinref part="Q3" gate="G$1" pin="C"/>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -11266,7 +11266,7 @@ Libraries by Sparkfun</text>
 <wire x1="86.36" y1="74.93" x2="97.79" y2="74.93" width="0.1524" layer="91"/>
 <junction x="97.79" y="74.93"/>
 <pinref part="Q4" gate="G$1" pin="C"/>
-<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -11415,8 +11415,8 @@ Libraries by Sparkfun</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="U6" gate="G$1" pin="VIN"/>
+<pinref part="C4" gate="G$1" pin="+"/>
+<pinref part="U5" gate="G$1" pin="VIN"/>
 <wire x1="172.72" y1="57.15" x2="172.72" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="64.77" x2="175.26" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -11430,20 +11430,20 @@ Libraries by Sparkfun</text>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="CB"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="U5" gate="G$1" pin="CB"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="207.01" y1="69.85" x2="205.74" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="VSW"/>
+<pinref part="U5" gate="G$1" pin="VSW"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="59.69" x2="215.9" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="59.69" x2="215.9" y2="57.15" width="0.1524" layer="91"/>
 <wire x1="217.17" y1="59.69" x2="215.9" y2="59.69" width="0.1524" layer="91"/>
 <junction x="215.9" y="59.69"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="214.63" y1="69.85" x2="215.9" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="69.85" x2="215.9" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -11464,14 +11464,14 @@ Libraries by Sparkfun</text>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="U6" gate="G$1" pin="ON/!OFF"/>
+<pinref part="U5" gate="G$1" pin="ON/!OFF"/>
 <wire x1="187.96" y1="52.07" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="U6" gate="G$1" pin="SS"/>
+<pinref part="U5" gate="G$1" pin="SS"/>
 <wire x1="182.88" y1="80.01" x2="185.42" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="80.01" x2="185.42" y2="77.47" width="0.1524" layer="91"/>
 </segment>
