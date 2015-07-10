@@ -4375,6 +4375,8 @@ from future changes to them. The product information on the Web Site or
 Materials is subject to change without notice. Do not finalize a design 
 with this information. 
 Particle is a registered trademark.</text>
+<text x="375.92" y="7.62" size="2.54" layer="94">1.3.0</text>
+<text x="289.56" y="25.4" size="5.08" layer="94">Particle Industires, Inc.</text>
 </plain>
 <instances>
 <instance part="1" gate="G$1" x="57.15" y="242.57"/>

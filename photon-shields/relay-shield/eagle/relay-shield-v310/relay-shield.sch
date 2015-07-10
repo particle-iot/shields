@@ -9796,7 +9796,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="290.83" y="26.67" size="4.572" layer="94">Particle Industries, Inc.</text>
 <text x="8.89" y="66.04" size="7.62" layer="95">Relay Interface</text>
 <text x="193.04" y="66.04" size="7.62" layer="95">Power Supply</text>
-<text x="377.19" y="6.35" size="2.54" layer="94">v2.0</text>
+<text x="377.19" y="6.35" size="2.54" layer="94">3.1.0</text>
 <text x="307.34" y="127" size="1.778" layer="96">6.8uH</text>
 <text x="5.08" y="5.08" size="2.1844" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. PARTICLE INDUSTRIES, INC 
 ("PARTICLE") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 

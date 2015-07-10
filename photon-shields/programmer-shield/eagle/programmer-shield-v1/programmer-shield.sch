@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6633,7 +6633,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="290.83" y="26.67" size="3.81" layer="94">FT2232 JTAG/PROGRAMMER SHIELD</text>
+<text x="290.83" y="26.67" size="3.81" layer="94">Particle Industries, Inc.</text>
 <wire x1="5.08" y1="40.64" x2="236.22" y2="40.64" width="0.1524" layer="95" style="dashdot"/>
 <wire x1="236.22" y1="40.64" x2="236.22" y2="259.08" width="0.1524" layer="95" style="dashdot"/>
 <wire x1="236.22" y1="259.08" x2="5.08" y2="259.08" width="0.1524" layer="95" style="dashdot"/>
@@ -6661,6 +6661,7 @@ Particle may make changes to specifications and product descriptions at any time
 characteristics of any features or instructions marked "reserved" or "undefined." Particle reserves these for future definition and shall have no responsibility whatsoever for conflicts or incompatibilities arising 
 from future changes to them. The product information on the Web Site or Materials is subject to change without notice. Do not finalize a design with this information. 
 Particle is a registered trademark.</text>
+<text x="375.92" y="7.62" size="2.54" layer="94">1.0.0</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="109.22" y="135.89"/>
