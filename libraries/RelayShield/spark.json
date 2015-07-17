@@ -1,7 +1,7 @@
 {
-    "name": "Monitor",
-    "version": "0.0.2",
+    "name": "RelayShield",
+    "version": "0.0.1",
     "author": "Richard Whitney <richard@particle.io>",
     "license": "LGPL",
-    "description": "All the bits you need for the Spark Monitor"
+    "description": "Functions to make the Photon Relay Shield even easier!"
 }
