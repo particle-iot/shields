@@ -1,0 +1,7 @@
+{
+    "name": "Monitor",
+    "version": "0.0.2",
+    "author": "Richard Whitney <richard@particle.io>",
+    "license": "LGPL",
+    "description": "All the bits you need for the Spark Monitor"
+}
