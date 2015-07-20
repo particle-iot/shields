@@ -1,0 +1,7 @@
+{
+    "name": "PowerShield",
+    "version": "0.0.1",
+    "author": "Mohit Bhoite <mohit@particle.io>",
+    "license": "LGPL",
+    "description": "Library to support the fuel guage on the Power Shield"
+}
