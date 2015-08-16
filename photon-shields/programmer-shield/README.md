@@ -29,13 +29,14 @@ So the trick is to disable only one of the driver entries by commenting it out i
 
 You'll need to restart your machine now. I had to shutdown my computer and start it again for the changes to get updated.
 
-If you have previously installed FTDI drivers, make sure to remove them or unload them before running OpenOCD.
+If you have previously installed FTDI drivers (most likely this happened automatically in the background when you plugged in your Programmer Shield), make sure to remove them or unload them before running OpenOCD.
 
-`sudo kextunload FTDIUSBSerialDriver.kext`
-
-You can find documentation on OpenOCD commands [here.](http://openocd.org/doc-release/html/Flash-Commands.html#Flash-Commands)
+`sudo kextunload -bundle com.apple.driver.AppleUSBFTDI`
 
 Here is a sample command to flash a binary.
 
-`openocd -f interface/ftdi/particle-jtag.cfg -f target/stm32f2x.cfg -c "program bootloader.elf verify reset exit"`
+`openocd -f interface/ftdi/particle-ftdi.cfg -f target/stm32f2x.cfg -c "program bootloader.elf verify reset exit"`
 
+You can find documentation on OpenOCD commands [here.](http://openocd.org/doc-release/html/Flash-Commands.html#Flash-Commands)
+
+Also a [great 5-step guide](https://medium.com/@jvanier/5-steps-to-setup-and-use-a-debugger-with-the-particle-photon-ad0e0fb43a34) written by one of our awexome community members @monkbroc
