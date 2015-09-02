@@ -39,4 +39,4 @@ Here is a sample command to flash a binary.
 
 You can find documentation on OpenOCD commands [here.](http://openocd.org/doc-release/html/Flash-Commands.html#Flash-Commands)
 
-Also a [great 5-step guide](https://medium.com/@jvanier/5-steps-to-setup-and-use-a-debugger-with-the-particle-photon-ad0e0fb43a34) written by one of our awexome community members @monkbroc
+Also a [great 5-step guide](https://medium.com/@jvanier/5-steps-to-setup-and-use-a-debugger-with-the-particle-photon-ad0e0fb43a34) written by one of our awesome community member @monkbroc
