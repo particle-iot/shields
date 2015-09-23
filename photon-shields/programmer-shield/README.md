@@ -4,6 +4,14 @@ The Programmer Shield is compatible with the Photon and the Electron.
 
 **Pins D3, D4, D5, D6 and D7 (blue LED) are used for the JTAG signals** so your application code must not use those pins while using the Programmer Shield with OpenOCD. An alternative debug mode called SWD that uses only D6 and D7 can be configured in OpenOCD.
 
+A nice way of ensuring you can still use the pins when not debugging, and automatically avoiding using them when debugging can be done by wrapping sensitive JTAG pins with a precompiler directive as follows. This way your code will not clobber the JTAG interface when enabling JTAG debugging with `USE_SWD_JTAG=y`
+
+```
+#ifndef USE_SWD_JTAG
+	pinMode(D7, OUTPUT);
+#endif
+```
+
 # Installing OpenOCD for Particle Programmer Shield:
 
 ### OSX:
