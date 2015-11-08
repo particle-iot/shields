@@ -1,0 +1,5 @@
+#!/bin/bash
+# "Particle OpenOCD": A thin wrapper for making openocd usage with a Particle Device a bit more user friendly.
+: ${STM32F2X_CFG_PATH:?"REQUIRED, typically something like: /a/valid/path/to/stm32f2x.cfg"}
+: ${PARTICLE_CFG_PATH:?"REQUIRED, typically something like: /a/valid/path/to/programmer-shields/particle.cfg"}
+echo 'hi'
