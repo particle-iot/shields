@@ -1,3 +1,9 @@
+# TOC
+* [Hardware Compatibility](#hardware-compatibility)
+* [Installing OpenOCD for Particle Programmer Shield (OSX)](#installing-openocd-for-particle-programmer-shield)
+* [Common Commands](#common-commands)
+* [Troubleshooting](#troubleshooting)
+
 # Hardware Compatibility
 
 The Programmer Shield is compatible with the Photon and the Electron.
@@ -62,7 +68,7 @@ You can find documentation on OpenOCD commands [here.](http://openocd.org/doc-re
 
 Also a [great 5-step guide](https://medium.com/@jvanier/5-steps-to-setup-and-use-a-debugger-with-the-particle-photon-ad0e0fb43a34) written by one of our awexome community members @monkbroc
 
-##Common Commands
+# Common Commands
 
 ####**Flash a binary using OpenOCD and FTDI shield:**
  
@@ -199,3 +205,133 @@ You can also erase specific addresses within the memory instead of complete sect
 *Command:* `flash erase_address [pad] [unlock] address length`
 Erase sectors starting at address for length bytes. Unless pad is specified, address must begin a flash sector, and address + length - 1 must end a sector. Specifying pad erases extra data at the beginning and/or end of the specified region, as needed to erase only full sectors. The flash bank to use is inferred from the address, and the specified length must stay within that bank. As a special case, when length is zero and address is the start of the bank, the whole flash is erased. If unlock is specified, then the flash is unprotected before erase starts.
 
+# Troubleshooting
+
+## FTDI to USB serial converter stops working
+
+After installing the Programmer Shield, your FTDI to USB serial converter is not found.  Try these steps:
+
+* Completely power off the computer and power back up, your driver may have loaded now (yes this has been observed!)
+* You may have multiple FTDI drivers installed which will confuse the system and none will be loaded for your device.  Disable all but one by searching for `FTDI*.kext` and renaming to `FTDI*.disabled`.  If you get into this situation, the official FTDI driver is a good one to leave, and disable Apple's FTDI driver in the same way, and also extra FTDI drivers.  The official FTDI driver on my OSX 10.10 installation was found at `/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/Info.plist` which slightly differs from the location in [**This really helpful guide**](http://www.mommosoft.com/blog/2014/10/24/ftdi-chip-and-os-x-10-10/) which you should try to follow to also ensure that your USB to serial device is added to the Info.plist properly.
+* Capturing some of the useful commands from that post here, incase it disappears.
+```
+cd /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns
+sudo mv AppleUSBFTDI.kext AppleUSBFTDI.disabled
+
+kextstat | grep FTDI
+
+system_profiler -detailLevel full
+
+sudo nvram boot-args="kext-dev-mode=1"
+
+// Modified from blog post
+sudo kextunload /Library/Extensions/FTDIUSBSerialDriver.kext/
+sudo kextload /Library/Extensions/FTDIUSBSerialDriver.kext/
+
+ls /dev |grep usbserial
+```
+* And here is a sample edit to the official FTDI driver that enables only 1 of the two serial drivers for the Programmer Shield FT2232, disables one complete set of extra FT2232 drivers, and ensures we have a FT232R USB UART driver for our serial converter (make sure this is not duplicated elsewhere in the file.  It may be as `<key>FTDI R Chip</key>`)
+```
+<!--
+	<key>FT2232C_A</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+		<key>IOClass</key>
+		<string>FTDIUSBSerialDriver</string>
+		<key>IOProviderClass</key>
+		<string>IOUSBInterface</string>
+		<key>bConfigurationValue</key>
+		<integer>1</integer>
+		<key>bInterfaceNumber</key>
+		<integer>0</integer>
+		<key>idProduct</key>
+		<integer>24592</integer>
+		<key>idVendor</key>
+		<integer>1027</integer>
+	</dict>
+-->
+	<key>FT2232C_B</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+		<key>IOClass</key>
+		<string>FTDIUSBSerialDriver</string>
+		<key>IOProviderClass</key>
+		<string>IOUSBInterface</string>
+		<key>bConfigurationValue</key>
+		<integer>1</integer>
+		<key>bInterfaceNumber</key>
+		<integer>1</integer>
+		<key>idProduct</key>
+		<integer>24592</integer>
+		<key>idVendor</key>
+		<integer>1027</integer>
+	</dict>
+<!--
+	<key>FT2232H_A</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+		<key>IOClass</key>
+		<string>FTDIUSBSerialDriver</string>
+		<key>IOProviderClass</key>
+		<string>IOUSBInterface</string>
+		<key>bConfigurationValue</key>
+		<integer>1</integer>
+		<key>bInterfaceNumber</key>
+		<integer>0</integer>
+		<key>bcdDevice</key>
+		<integer>1792</integer>
+		<key>idProduct</key>
+		<integer>24592</integer>
+		<key>idVendor</key>
+		<integer>1027</integer>
+	</dict>
+	<key>FT2232H_B</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+		<key>IOClass</key>
+		<string>FTDIUSBSerialDriver</string>
+		<key>IOProviderClass</key>
+		<string>IOUSBInterface</string>
+		<key>bConfigurationValue</key>
+		<integer>1</integer>
+		<key>bInterfaceNumber</key>
+		<integer>1</integer>
+		<key>bcdDevice</key>
+		<integer>1792</integer>
+		<key>idProduct</key>
+		<integer>24592</integer>
+		<key>idVendor</key>
+		<integer>1027</integer>
+	</dict>
+-->
+	<key>FT232R USB UART</key>
+	<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+		<key>IOClass</key>
+		<string>FTDIUSBSerialDriver</string>
+		<key>IOProviderClass</key>
+		<string>IOUSBInterface</string>
+		<key>bConfigurationValue</key>
+		<integer>1</integer>
+		<key>bInterfaceNumber</key>
+		<integer>0</integer>
+		<key>bcdDevice</key>
+		<integer>1536</integer>
+		<key>idProduct</key>
+		<integer>24577</integer>
+		<key>idVendor</key>
+		<integer>1027</integer>
+	</dict>
+```
+
+## Programmer Shield will not connect to device
+
+After every disconnect, a good habit to get into for reconnect is the following:
+
+* Press the `FT RESET` button on the Programmer Shield
+* Put the Device socketed in the shield in DFU mode to ensure all JTAG I/O are not set as outputs.
