@@ -259,6 +259,7 @@ Particle is a registered trademark.</text>
 <vertex x="17.145" y="7.366" curve="-90"/>
 <vertex x="10.795" y="1.016" curve="-90"/>
 </polygon>
+<text x="2.159" y="4.191" size="0.8128" layer="21" font="vector" ratio="15" align="center">v002</text>
 </plain>
 <libraries>
 <library name="microbuilder">
