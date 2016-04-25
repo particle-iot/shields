@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -90,6 +90,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="LOGO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -3763,6 +3765,77 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-coax">
+<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
+Radiall  and M/A COM.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="BU-SMA-V">
+<description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
+Radiall&lt;p&gt;
+distributor RS 112-3794</description>
+<wire x1="-1.1" y1="3.2" x2="1.1" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="1.1" x2="3.2" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-3.2" x2="-1.1" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-1.1" x2="-3.2" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-3.1999" y1="3.1999" x2="3.2" y2="3.2" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.1999" y2="-3.1999" width="0.2032" layer="51"/>
+<wire x1="3.1999" y1="-3.1999" x2="-3.2" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-3.2" x2="-3.1999" y2="3.1999" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="3.1999" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.27"/>
+<pad name="2" x="-2.5499" y="2.5499" drill="1.778"/>
+<pad name="3" x="2.5499" y="2.5499" drill="1.778"/>
+<pad name="4" x="2.5499" y="-2.5499" drill="1.778"/>
+<pad name="5" x="-2.5499" y="-2.5499" drill="1.778"/>
+<text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BNC-FGND">
+<wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.508" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0.508" width="0.3048" layer="94" curve="-79.611142" cap="flat"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-0.508" width="0.3048" layer="94" curve="79.611142" cap="flat"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BU-SMA-V" prefix="X">
+<description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
+Radiall&lt;p&gt;
+distributor RS 112-3794</description>
+<gates>
+<gate name="G$1" symbol="BNC-FGND" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="BU-SMA-V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 3 4 5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3778,7 +3851,7 @@ LETTER landscape</description>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="RED"/>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="470-1K"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
-<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
+<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.01uF"/>
 <part name="B1" library="microbuilder" deviceset="BATTERY" device="CR1220_SMT" value="CR1220"/>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
@@ -3807,9 +3880,11 @@ LETTER landscape</description>
 <part name="JP1" library="microbuilder" deviceset="HEADER-1X15" device=""/>
 <part name="JP3" library="microbuilder" deviceset="HEADER-1X15" device=""/>
 <part name="T1" library="zetex" deviceset="PMOSSOT23" device="" value="DMG3415"/>
-<part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
+<part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="2K2"/>
 <part name="U$15" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="JP4" library="microbuilder" deviceset="HEADER-1X1" device="ROUND"/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="1uF"/>
+<part name="X3" library="con-coax" deviceset="BU-SMA-V" device=""/>
+<part name="U$4" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3873,7 +3948,7 @@ Particle is a registered trademark.</text>
 <instance part="U$3" gate="G$1" x="40.64" y="154.94"/>
 <instance part="C2" gate="G$1" x="48.26" y="162.56" rot="R90"/>
 <instance part="U$5" gate="G$1" x="50.8" y="160.02"/>
-<instance part="J1" gate="G$1" x="43.18" y="180.34" rot="R90"/>
+<instance part="J1" gate="G$1" x="40.64" y="179.07" rot="MR90"/>
 <instance part="U$1" gate="G$1" x="109.22" y="144.78" rot="R90"/>
 <instance part="D1" gate="G$1" x="43.18" y="170.18" rot="R270"/>
 <instance part="JP1" gate="G$1" x="99.06" y="134.62"/>
@@ -3881,7 +3956,9 @@ Particle is a registered trademark.</text>
 <instance part="T1" gate="A" x="172.72" y="160.02" rot="R180"/>
 <instance part="R7" gate="G$1" x="180.34" y="167.64" rot="R90"/>
 <instance part="U$15" gate="G$1" x="172.72" y="180.34"/>
-<instance part="JP4" gate="G$1" x="200.66" y="165.1" rot="R90"/>
+<instance part="C6" gate="G$1" x="232.41" y="153.67"/>
+<instance part="X3" gate="G$1" x="231.14" y="101.6" rot="MR0"/>
+<instance part="U$4" gate="G$1" x="228.6" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -3925,26 +4002,23 @@ Particle is a registered trademark.</text>
 </segment>
 <segment>
 <wire x1="218.44" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="119.38" x2="238.76" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="111.76" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="109.22" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="119.38" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="137.16" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="111.76" x2="238.76" y2="111.76" width="0.1524" layer="91"/>
 <junction x="238.76" y="119.38"/>
-<junction x="238.76" y="109.22"/>
-<junction x="238.76" y="111.76"/>
 <pinref part="U1" gate="G$1" pin="GND@3"/>
 <pinref part="U$19" gate="G$1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND@4"/>
-<pinref part="X2" gate="G$1" pin="GND@1"/>
-<pinref part="X2" gate="G$1" pin="GND@0"/>
 </segment>
 <segment>
-<wire x1="241.3" y1="152.4" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="152.4" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="-"/>
 <pinref part="U$14" gate="G$1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="149.86" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="232.41" y1="151.13" x2="232.41" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="232.41" y1="149.86" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
+<junction x="241.3" y="149.86"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="GND"/>
@@ -3978,11 +4052,6 @@ Particle is a registered trademark.</text>
 <wire x1="68.58" y1="66.04" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="40.64" y1="175.26" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
 </segment>
@@ -3995,6 +4064,16 @@ Particle is a registered trademark.</text>
 <wire x1="106.68" y1="144.78" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
 <junction x="96.52" y="144.78"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="X3" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="99.06" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="157.48" x2="40.64" y2="173.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4045,9 +4124,14 @@ Particle is a registered trademark.</text>
 <pinref part="U1" gate="G$1" pin="VBACKUP"/>
 </segment>
 <segment>
-<wire x1="241.3" y1="157.48" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="157.48" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
 <label x="241.3" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="B1" gate="G$1" pin="+"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="160.02" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="232.41" y1="158.75" x2="232.41" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="232.41" y1="160.02" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
+<junction x="241.3" y="160.02"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -4080,13 +4164,6 @@ Particle is a registered trademark.</text>
 <wire x1="63.5" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
 <junction x="55.88" y="147.32"/>
 <pinref part="JP3" gate="G$1" pin="13"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="218.44" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="EX_ANT"/>
-<pinref part="X2" gate="G$1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="1PPS" class="0">
@@ -4306,12 +4383,9 @@ Particle is a registered trademark.</text>
 </segment>
 <segment>
 <wire x1="180.34" y1="162.56" x2="177.8" y2="162.56" width="0.1524" layer="91"/>
-<junction x="180.34" y="162.56"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="T1" gate="A" pin="G"/>
-<wire x1="180.34" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<label x="193.04" y="162.56" size="1.778" layer="95"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<label x="177.8" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -4370,13 +4444,6 @@ Particle is a registered trademark.</text>
 <pinref part="JP3" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="172.72" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <wire x1="172.72" y1="154.94" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
@@ -4418,6 +4485,22 @@ Particle is a registered trademark.</text>
 <segment>
 <pinref part="X1" gate="G$1" pin="C0"/>
 <junction x="86.36" y="109.22"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="EX_ANT"/>
+<wire x1="218.44" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="116.84" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="173.99" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
