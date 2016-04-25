@@ -985,22 +985,22 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="3.048" y="11.176" size="0.8128" layer="25" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="3.048" y="14.732" size="0.8128" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C1" library="microbuilder" package="0805-NO@1" value="0.01uF" x="23.749" y="20.574" smashed="yes" rot="R90">
-<attribute name="NAME" x="24.638" y="18.796" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="24.003" y="19.177" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<element name="C1" library="microbuilder" package="0805-NO@1" value="0.01uF" x="23.876" y="20.574" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.765" y="18.796" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="24.13" y="19.177" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="B1" library="microbuilder" package="CR1220" value="CR1220" x="10.541" y="31.496" smashed="yes">
 <attribute name="NAME" x="10.033" y="32.272" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="8.382" y="31.137" size="0.8128" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="X2" library="microbuilder" package="U.FL" value="uFL" x="-7.62" y="4.318" smashed="yes"/>
-<element name="FB2" library="microbuilder" package="0805-NO@1" value="Ferrite" x="27.559" y="20.574" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.448" y="19.05" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="27.94" y="18.923" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<element name="FB2" library="microbuilder" package="0805-NO@1" value="Ferrite" x="25.781" y="20.574" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.67" y="19.05" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="26.162" y="18.923" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C4" library="microbuilder" package="0805-NO@1" value="10uF" x="25.654" y="20.574" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.416" y="18.923" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="26.035" y="19.431" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<element name="C4" library="microbuilder" package="0805-NO@1" value="10uF" x="28.448" y="20.574" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.21" y="18.923" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="28.829" y="19.431" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="U3" library="microbuilder" package="LGA16_3X3MM" value="LIS3DHTR" x="18.288" y="22.606" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.731" y="20.007" size="0.8128" layer="25" ratio="18"/>
@@ -1010,26 +1010,26 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="14.224" y="18.669" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="14.732" y="22.86" size="0.8128" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R8" library="microbuilder" package="0805-NO" value="10K" x="20.32" y="28.194" smashed="yes">
-<attribute name="NAME" x="18.669" y="27.432" size="0.8128" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="19.304" y="27.813" size="0.8128" layer="27" ratio="10"/>
+<element name="R8" library="microbuilder" package="0805-NO" value="10K" x="19.431" y="27.432" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.193" y="25.781" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="19.812" y="26.416" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="JP2" library="microbuilder" package="1X01_ROUND" value="" x="7.747" y="11.938" smashed="yes">
 <attribute name="NAME" x="7.4168" y="10.2108" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="6.477" y="8.763" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="C2" library="microbuilder" package="0805-NO@1" value="10uF" x="27.178" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.829" y="27.432" size="0.8128" layer="25" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="27.559" y="26.797" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<element name="C2" library="microbuilder" package="0805-NO@1" value="10uF" x="28.448" y="24.511" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.797" y="25.019" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="28.067" y="25.654" size="0.8128" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="J1" library="adafruit2" package="1X2-3.5MM" value="1X2-3.5MM" x="25.908" y="34.417" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.194" y="35.767" size="1.27" layer="25"/>
+<element name="J1" library="adafruit2" package="1X2-3.5MM" value="1X2-3.5MM" x="25.146" y="34.417" smashed="yes" rot="R180">
+<attribute name="NAME" x="24.432" y="35.767" size="1.27" layer="25"/>
 </element>
 <element name="U$21" library="microbuilder" package="SYMBOL_PLUS" value="" x="21.209" y="39.497" smashed="yes"/>
 <element name="U$13" library="microbuilder" package="SYMBOL_MINUS" value="" x="33.528" y="40.005" smashed="yes"/>
-<element name="D1" library="microbuilder" package="SMADIODE" value="" x="24.003" y="26.543" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.352" y="25.527" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
-<attribute name="VALUE" x="26.289" y="24.003" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="D1" library="microbuilder" package="SMADIODE" value="" x="25.273" y="28.829" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.289" y="27.178" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="27.813" y="31.115" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="JP1" library="microbuilder" package="1X15_ROUND_70" value="" x="64.77" y="21.59" smashed="yes">
 <attribute name="NAME" x="64.4398" y="19.3548" size="0.8128" layer="25" ratio="18"/>
@@ -1039,17 +1039,17 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="65.1002" y="18.4912" size="0.8128" layer="25" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="83.82" y="19.685" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="T1" library="zetex" package="SOT-23" value="DMG3415" x="28.067" y="24.257" smashed="yes">
-<attribute name="OC_NEWARK" value="unknown" x="28.067" y="24.257" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="28.067" y="24.257" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="28.067" y="24.257" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="28.067" y="24.257" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.67" y="26.035" size="1.27" layer="27" ratio="10"/>
-<attribute name="NAME" x="27.686" y="25.781" size="0.8218" layer="25" ratio="10"/>
+<element name="T1" library="zetex" package="SOT-23" value="DMG3415" x="25.654" y="24.638" smashed="yes" rot="R90">
+<attribute name="OC_NEWARK" value="unknown" x="25.654" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="25.654" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="25.654" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="25.654" y="24.638" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="23.876" y="23.241" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="24.13" y="24.257" size="0.8218" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="R7" library="microbuilder" package="0805-NO" value="2K2" x="29.083" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.718" y="26.162" size="0.8128" layer="25" ratio="18" rot="R180"/>
-<attribute name="VALUE" x="29.845" y="29.972" size="0.4064" layer="27" ratio="10" rot="R90"/>
+<element name="R7" library="microbuilder" package="0805-NO" value="2K2" x="22.987" y="24.638" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.352" y="26.416" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="22.225" y="22.606" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C6" library="microbuilder" package="0805-NO@1" value="1uF" x="21.907" y="20.55" rot="R90"/>
 <element name="X3" library="con-coax" package="BU-SMA-V" value="BU-SMA-V" x="6.604" y="5.842">
@@ -1202,10 +1202,11 @@ einem neuen Namen ab.</description>
 <wire x1="16.116" y1="21.256" x2="14.986" y2="22.386" width="0.254" layer="1"/>
 <wire x1="16.938" y1="23.106" x2="15.706" y2="23.106" width="0.254" layer="1"/>
 <wire x1="15.706" y1="23.106" x2="14.986" y2="22.386" width="0.254" layer="1"/>
-<wire x1="29.083" y1="28.89" x2="31.75" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="27.1272" y1="25.273" x2="29.083" y2="28.89" width="0" layer="19" extent="1-1"/>
-<wire x1="21.651" y1="26.162" x2="27.1272" y2="25.273" width="0" layer="19" extent="1-1"/>
-<wire x1="21.27" y1="28.194" x2="21.651" y2="26.162" width="0" layer="19" extent="1-1"/>
+<wire x1="24.638" y1="23.6982" x2="24.6278" y2="23.688" width="0.3048" layer="1"/>
+<wire x1="24.6278" y1="23.688" x2="22.987" y2="23.688" width="0.3048" layer="1"/>
+<wire x1="24.638" y1="23.6982" x2="31.75" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="21.651" y1="26.162" x2="22.987" y2="23.688" width="0" layer="19" extent="1-1"/>
+<wire x1="19.431" y1="28.382" x2="21.651" y2="26.162" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBACKUP">
 <contactref element="U1" pad="P$4"/>
@@ -1285,11 +1286,12 @@ einem neuen Namen ab.</description>
 <contactref element="U1" pad="P$1"/>
 <contactref element="FB2" pad="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="27.559" y1="19.624" x2="25.654" y2="19.624" width="1.016" layer="1"/>
+<wire x1="25.781" y1="19.624" x2="28.448" y2="19.624" width="1.016" layer="1"/>
 <wire x1="26.562" y1="16.517" x2="26.543" y2="16.536" width="0.9652" layer="1"/>
 <wire x1="26.543" y1="16.536" x2="26.543" y2="19.05" width="0.9652" layer="1"/>
-<wire x1="26.543" y1="19.05" x2="25.654" y2="19.624" width="0" layer="19" extent="1-1"/>
-<wire x1="23.749" y1="19.624" x2="25.654" y2="19.624" width="0" layer="19" extent="1-1"/>
+<wire x1="23.876" y1="19.624" x2="28.448" y2="19.624" width="1.016" layer="1"/>
+<wire x1="28.448" y1="19.624" x2="25.969" y2="19.624" width="0.4064" layer="1"/>
+<wire x1="25.969" y1="19.624" x2="26.543" y2="19.05" width="0.4064" layer="1"/>
 </signal>
 <signal name="ACCEL_CS">
 <contactref element="U3" pad="8"/>
@@ -1301,14 +1303,11 @@ einem neuen Namen ab.</description>
 <wire x1="69.85" y1="6.731" x2="69.85" y2="11.049" width="0.6096" layer="1"/>
 <wire x1="69.85" y1="11.049" x2="69.85" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="69.85" y1="13.97" x2="69.85" y2="16.51" width="0.6096" layer="1"/>
-<wire x1="19.638" y1="23.106" x2="20.093" y2="23.561" width="0.254" layer="1"/>
 <wire x1="69.85" y1="6.731" x2="69.85" y2="4.572" width="0.254" layer="1"/>
 <wire x1="69.85" y1="4.572" x2="66.675" y2="1.397" width="0.254" layer="1"/>
 <wire x1="66.675" y1="1.397" x2="30.353" y2="1.397" width="0.254" layer="1"/>
 <wire x1="30.353" y1="1.397" x2="28.702" y2="3.048" width="0.254" layer="1"/>
 <wire x1="28.702" y1="3.048" x2="28.702" y2="12.446" width="0.254" layer="1"/>
-<via x="11.811" y="13.97" extent="1-16" drill="0.4064"/>
-<wire x1="11.811" y1="13.97" x2="11.684" y2="14.097" width="0.254" layer="16"/>
 <wire x1="11.684" y1="14.097" x2="11.43" y2="14.351" width="0.254" layer="16"/>
 <wire x1="11.43" y1="14.351" x2="11.43" y2="22.86" width="0.254" layer="16"/>
 <wire x1="11.43" y1="22.86" x2="12.573" y2="24.003" width="0.254" layer="16"/>
@@ -1321,8 +1320,9 @@ einem neuen Namen ab.</description>
 <wire x1="11.684" y1="14.097" x2="12.7" y2="13.081" width="0.254" layer="1"/>
 <wire x1="12.7" y1="13.081" x2="28.067" y2="13.081" width="0.254" layer="1"/>
 <wire x1="28.067" y1="13.081" x2="28.702" y2="12.446" width="0.254" layer="1"/>
-<wire x1="19.431" y1="25.908" x2="19.37" y2="28.194" width="0" layer="19" extent="1-16"/>
-<wire x1="20.093" y1="23.561" x2="20.574" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="19.638" y1="23.106" x2="20.574" y2="24.042" width="0.254" layer="1"/>
+<wire x1="20.574" y1="24.042" x2="20.574" y2="24.765" width="0.254" layer="1"/>
+<wire x1="19.431" y1="25.908" x2="19.431" y2="26.482" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ACCEL_MISO">
 <contactref element="U3" pad="7"/>
@@ -1400,8 +1400,10 @@ einem neuen Namen ab.</description>
 <wire x1="46.482" y1="18.796" x2="30.861" y2="18.796" width="1.27" layer="16"/>
 <wire x1="30.861" y1="18.796" x2="29.464" y2="20.193" width="1.27" layer="16"/>
 <wire x1="29.464" y1="20.193" x2="29.464" y2="27.051" width="1.27" layer="16"/>
-<wire x1="29.464" y1="27.051" x2="27.178" y2="26.99" width="0" layer="19" extent="1-16"/>
-<wire x1="24.003" y1="24.1935" x2="27.178" y2="26.99" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6225" y1="28.829" x2="27.6225" y2="28.0035" width="1.27" layer="1"/>
+<wire x1="27.6225" y1="28.0035" x2="28.448" y2="27.178" width="1.27" layer="1"/>
+<wire x1="28.448" y1="27.178" x2="28.448" y2="25.461" width="1.27" layer="1"/>
+<wire x1="29.464" y1="27.051" x2="28.448" y2="27.178" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="A1">
 <contactref element="X1" pad="11A"/>
@@ -1546,8 +1548,9 @@ einem neuen Namen ab.</description>
 <wire x1="59.69" y1="21.59" x2="58.293" y2="20.193" width="0.254" layer="1"/>
 <wire x1="58.293" y1="20.193" x2="30.226" y2="20.193" width="0.254" layer="1"/>
 <wire x1="30.226" y1="20.193" x2="29.845" y2="20.574" width="0.254" layer="1"/>
-<wire x1="29.0576" y1="25.273" x2="29.083" y2="26.99" width="0" layer="19" extent="1-1"/>
-<wire x1="29.845" y1="20.574" x2="29.0576" y2="25.273" width="0" layer="19" extent="1-1"/>
+<wire x1="24.638" y1="25.6286" x2="24.5974" y2="25.588" width="0.3048" layer="1"/>
+<wire x1="24.5974" y1="25.588" x2="22.987" y2="25.588" width="0.3048" layer="1"/>
+<wire x1="29.845" y1="20.574" x2="24.638" y2="25.6286" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D7">
 <contactref element="X1" pad="32B"/>
@@ -1815,7 +1818,8 @@ einem neuen Namen ab.</description>
 <signal name="VCC">
 <contactref element="T1" pad="1"/>
 <contactref element="FB2" pad="2"/>
-<wire x1="27.559" y1="21.524" x2="28.0924" y2="23.241" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="24.6634" x2="26.416" y2="24.4094" width="1.27" layer="1"/>
+<wire x1="26.416" y1="24.4094" x2="25.781" y2="21.524" width="1.27" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="X1" pad="16B"/>
@@ -1870,7 +1874,8 @@ einem neuen Namen ab.</description>
 <signal name="N$9">
 <contactref element="D1" pad="A"/>
 <contactref element="J1" pad="1"/>
-<wire x1="24.003" y1="28.8925" x2="24.108" y2="34.417" width="0" layer="19" extent="1-1"/>
+<wire x1="23.346" y1="34.417" x2="22.9235" y2="33.9945" width="1.27" layer="1"/>
+<wire x1="22.9235" y1="33.9945" x2="22.9235" y2="28.829" width="1.27" layer="1"/>
 </signal>
 </signals>
 <errors>
