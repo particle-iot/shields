@@ -170,32 +170,6 @@
 <wire x1="28.575" y1="0" x2="28.575" y2="57.15" width="0.0254" layer="49"/>
 </plain>
 <libraries>
-<library name="u-blox">
-<packages>
-<package name="PAM-7Q-TH">
-<smd name="P$9" x="-2.27" y="16.25" dx="2.5" dy="2.5" layer="1"/>
-<smd name="P$10" x="20.32" y="16.25" dx="2.5" dy="2.5" layer="1"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="51"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<text x="-2.286" y="21.336" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.159" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="21"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="21"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="21"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="8" x="17.78" y="0" drill="1" shape="long" rot="R90"/>
-</package>
-</packages>
-</library>
 <library name="adafruit">
 <packages>
 <package name="414-VA5R">
@@ -1631,6 +1605,81 @@ Metric Code Size 1608</description>
 </package>
 </packages>
 </library>
+<library name="u-blox">
+<packages>
+<package name="MAX-M8">
+<description>u-blox MAX-M8 GPS module</description>
+<smd name="1" x="4.75" y="-4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="2" x="4.75" y="-3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="3" x="4.75" y="-2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="4" x="4.75" y="-1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="5" x="4.75" y="0" dx="1.8" dy="0.8" layer="1"/>
+<smd name="6" x="4.75" y="1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="7" x="4.75" y="2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="8" x="4.75" y="3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="9" x="4.75" y="4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="10" x="-4.75" y="4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="11" x="-4.75" y="3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="12" x="-4.75" y="2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="13" x="-4.75" y="1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="14" x="-4.75" y="0" dx="1.8" dy="0.8" layer="1"/>
+<smd name="15" x="-4.75" y="-1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="16" x="-4.75" y="-2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="17" x="-4.75" y="-3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="18" x="-4.75" y="-4.4" dx="1.8" dy="0.7" layer="1"/>
+<wire x1="4.85" y1="-5.05" x2="-4.85" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="4.85" y1="5.05" x2="-4.85" y2="5.05" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="-5.05" x2="4.85" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="-5.05" x2="4.85" y2="5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="5.05" x2="-4.85" y2="5.05" width="0.127" layer="51"/>
+<wire x1="-4.85" y1="5.05" x2="-4.85" y2="-5.05" width="0.127" layer="51"/>
+<circle x="5.4" y="-5.6" radius="0.5" width="0" layer="21"/>
+<rectangle x1="4.2" y1="-5.1" x2="4.9" y2="-4.4" layer="51"/>
+<text x="-5.08" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="25" font="vector">&gt;VALUE</text>
+<rectangle x1="2.95" y1="0.8" x2="3.85" y2="1.4" layer="31"/>
+<rectangle x1="2.95" y1="3" x2="3.85" y2="3.6" layer="31"/>
+<rectangle x1="2.95" y1="1.95" x2="3.85" y2="2.55" layer="31"/>
+<rectangle x1="2.95" y1="-0.3" x2="3.85" y2="0.3" layer="31"/>
+<rectangle x1="2.95" y1="-1.4" x2="3.85" y2="-0.8" layer="31"/>
+<rectangle x1="2.95" y1="-2.5" x2="3.85" y2="-1.9" layer="31"/>
+<rectangle x1="2.95" y1="-3.6" x2="3.85" y2="-3" layer="31"/>
+<rectangle x1="-3.85" y1="-3.6" x2="-2.95" y2="-3" layer="31"/>
+<rectangle x1="-3.85" y1="-2.5" x2="-2.95" y2="-1.9" layer="31"/>
+<rectangle x1="-3.85" y1="-1.4" x2="-2.95" y2="-0.8" layer="31"/>
+<rectangle x1="-3.85" y1="-0.3" x2="-2.95" y2="0.3" layer="31"/>
+<rectangle x1="-3.85" y1="0.8" x2="-2.95" y2="1.4" layer="31"/>
+<rectangle x1="-3.85" y1="1.9" x2="-2.95" y2="2.5" layer="31"/>
+<rectangle x1="-3.85" y1="3" x2="-2.95" y2="3.6" layer="31"/>
+<rectangle x1="-3.85" y1="4.125" x2="-2.95" y2="4.675" layer="31"/>
+<rectangle x1="2.95" y1="4.125" x2="3.85" y2="4.675" layer="31"/>
+<rectangle x1="2.95" y1="-4.675" x2="3.85" y2="-4.125" layer="31"/>
+<rectangle x1="-3.85" y1="-4.675" x2="-2.95" y2="-4.125" layer="31"/>
+</package>
+</packages>
+</library>
+<library name="maxim">
+<packages>
+<package name="WLP-6">
+<smd name="A1" x="-0.2" y="0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="B1" x="-0.2" y="0" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="C1" x="-0.2" y="-0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="C2" x="0.2" y="-0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="B2" x="0.2" y="0" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="A2" x="0.2" y="0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<wire x1="-0.5" y1="0.7" x2="0.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.7" x2="0.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.7" x2="-0.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.7" x2="0.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.7" x2="0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.7" x2="-0.5" y2="0.7" width="0.127" layer="51"/>
+<rectangle x1="-0.5" y1="0.5" x2="-0.3" y2="0.7" layer="51"/>
+<rectangle x1="-0.6" y1="0.6" x2="-0.4" y2="0.8" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1820,7 +1869,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="u-blox" package="PAM-7Q-TH" value="PAM-7Q-GPS-TH" x="21.59" y="23.495" rot="R90"/>
 <element name="C1" library="adafruit" package="414-VA5R" value="" x="7.62" y="52.07" rot="R90"/>
 <element name="U3" library="microbuilder" package="LGA16_3X3MM" value="LIS3DHTR" x="12.7" y="17.78" rot="R90"/>
 <element name="C3" library="microbuilder" package="0805_10MGAP" value="0.1uF" x="9.525" y="17.78" rot="R90"/>
@@ -1848,10 +1896,11 @@ design rules under a new name.</description>
 <element name="C7" library="rcl" package="C0402" value="" x="19.05" y="17.145" rot="R90"/>
 <element name="C8" library="rcl" package="C0603K" value="" x="7.62" y="47.625" rot="R180"/>
 <element name="C9" library="rcl" package="C0603K" value="" x="7.62" y="46.355" rot="R180"/>
+<element name="U1" library="u-blox" package="MAX-M8" value="MAX-M8" x="15.24" y="38.1"/>
+<element name="U2" library="maxim" package="WLP-6" value="MAX2674" x="3.81" y="41.91"/>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="U1" pad="3"/>
 <contactref element="U3" pad="5"/>
 <contactref element="U3" pad="10"/>
 <contactref element="U3" pad="12"/>
@@ -1864,24 +1913,17 @@ design rules under a new name.</description>
 <contactref element="X1" pad="33A"/>
 <contactref element="X1" pad="33B"/>
 <contactref element="X1" pad="33C"/>
-<wire x1="13.2" y1="19.13" x2="21.59" y2="28.575" width="0" layer="19" extent="1-1"/>
-<wire x1="12.2" y1="19.13" x2="13.2" y2="19.13" width="0" layer="19" extent="1-1"/>
-<wire x1="13.7" y1="16.43" x2="13.2" y2="19.13" width="0" layer="19" extent="1-1"/>
-<wire x1="9.525" y1="18.83" x2="13.7" y2="16.43" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="49.85" x2="9.525" y2="18.83" width="0" layer="19" extent="1-1"/>
-<wire x1="17.25" y1="53.34" x2="13.97" y2="49.85" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="47.625" x2="13.97" y2="49.85" width="0" layer="19" extent="1-1"/>
+<wire x1="47.371" y1="42.545" x2="51.689" y2="42.545" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="42.545" x2="47.371" y2="42.545" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="47.625" x2="44.45" y2="42.545" width="0" layer="19" extent="1-1"/>
 <wire x1="31.369" y1="47.625" x2="34.29" y2="47.625" width="0" layer="19" extent="1-1"/>
 <wire x1="27.051" y1="47.625" x2="31.369" y2="47.625" width="0" layer="19" extent="1-1"/>
-<wire x1="44.45" y1="42.545" x2="34.29" y2="47.625" width="0" layer="19" extent="1-1"/>
-<wire x1="47.371" y1="42.545" x2="44.45" y2="42.545" width="0" layer="19" extent="1-1"/>
-<wire x1="51.689" y1="42.545" x2="47.371" y2="42.545" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VCC">
-<contactref element="U1" pad="4"/>
-</signal>
-<signal name="V_BKP">
-<contactref element="U1" pad="5"/>
+<wire x1="17.25" y1="53.34" x2="27.051" y2="47.625" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="49.85" x2="17.25" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="13.2" y1="19.13" x2="13.97" y2="49.85" width="0" layer="19" extent="1-1"/>
+<wire x1="12.2" y1="19.13" x2="13.2" y2="19.13" width="0" layer="19" extent="1-1"/>
+<wire x1="9.525" y1="18.83" x2="12.2" y2="19.13" width="0" layer="19" extent="1-1"/>
+<wire x1="13.7" y1="16.43" x2="13.2" y2="19.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U3" pad="14"/>
@@ -2066,6 +2108,15 @@ design rules under a new name.</description>
 <contactref element="X1" pad="1C"/>
 <wire x1="31.369" y1="50.165" x2="34.29" y2="50.165" width="0" layer="19" extent="1-1"/>
 <wire x1="27.051" y1="50.165" x2="31.369" y2="50.165" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GNDAC">
+<contactref element="U2" pad="B2"/>
+</signal>
+<signal name="VCC">
+<contactref element="U2" pad="A1"/>
+</signal>
+<signal name="GNDDC">
+<contactref element="U2" pad="C1"/>
 </signal>
 </signals>
 </board>

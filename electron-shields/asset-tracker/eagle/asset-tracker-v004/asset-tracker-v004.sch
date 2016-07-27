@@ -210,125 +210,6 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="u-blox">
-<packages>
-<package name="PAM-7Q-SMD">
-<smd name="1" x="0" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="2" x="2.54" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="3" x="5.08" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="4" x="7.62" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="5" x="10.16" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="6" x="12.7" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="7" x="15.24" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="8" x="17.78" y="0" dx="1.4" dy="2" layer="16" rot="R180"/>
-<smd name="P$9" x="-2.27" y="16.25" dx="2.5" dy="2.5" layer="16" cream="no"/>
-<smd name="P$10" x="20.32" y="16.25" dx="2.5" dy="2.5" layer="16" cream="no"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="51"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<wire x1="-0.21" y1="1.38" x2="17.99" y2="1.38" width="0.127" layer="51"/>
-<wire x1="-0.21" y1="19.38" x2="17.99" y2="19.38" width="0.127" layer="51"/>
-<wire x1="-0.21" y1="19.38" x2="-0.21" y2="1.38" width="0.127" layer="51"/>
-<wire x1="17.99" y1="19.38" x2="17.99" y2="1.38" width="0.127" layer="51"/>
-<wire x1="-0.127" y1="1.27" x2="-0.381" y2="1.524" width="0" layer="46" curve="-90"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="19.304" width="0" layer="46"/>
-<wire x1="-0.381" y1="19.304" x2="-0.127" y2="19.558" width="0" layer="46" curve="-90"/>
-<wire x1="-0.127" y1="19.558" x2="17.907" y2="19.558" width="0" layer="46"/>
-<wire x1="17.907" y1="19.558" x2="18.161" y2="19.304" width="0" layer="46" curve="-90"/>
-<wire x1="18.161" y1="19.304" x2="18.161" y2="1.524" width="0" layer="46"/>
-<wire x1="18.161" y1="1.524" x2="17.907" y2="1.27" width="0" layer="46" curve="-90"/>
-<wire x1="17.907" y1="1.27" x2="-0.127" y2="1.27" width="0" layer="46"/>
-<text x="-2.286" y="21.336" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.159" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
-<text x="8.89" y="10.16" size="1.778" layer="51" font="vector" align="center">CUTOUT</text>
-<text x="8.89" y="8.255" size="0.8128" layer="51" font="vector" align="center">FOR GPS ANTENNA</text>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="22"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="22"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="22"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="22"/>
-</package>
-<package name="PAM-7Q-TH">
-<smd name="P$9" x="-2.27" y="16.25" dx="2.5" dy="2.5" layer="1"/>
-<smd name="P$10" x="20.32" y="16.25" dx="2.5" dy="2.5" layer="1"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="51"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="51"/>
-<text x="-2.286" y="21.336" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.159" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-2.21" y1="-1.1" x2="-2.21" y2="20.9" width="0.127" layer="21"/>
-<wire x1="-2.21" y1="20.9" x2="19.99" y2="20.9" width="0.127" layer="21"/>
-<wire x1="19.99" y1="-1.1" x2="19.99" y2="20.9" width="0.127" layer="21"/>
-<wire x1="-2.21" y1="-1.1" x2="19.99" y2="-1.1" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="8" x="17.78" y="0" drill="1" shape="long" rot="R90"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PAM-7Q-GPS">
-<pin name="RXD" x="11.43" y="8.89" length="short" direction="in" rot="R180"/>
-<pin name="TXD" x="11.43" y="6.35" length="short" direction="out" rot="R180"/>
-<pin name="GND" x="11.43" y="3.81" length="short" direction="pwr" rot="R180"/>
-<pin name="VCC" x="11.43" y="1.27" length="short" direction="pwr" rot="R180"/>
-<pin name="V_BKP" x="11.43" y="-1.27" length="short" direction="pwr" rot="R180"/>
-<pin name="TIME_PULSE" x="11.43" y="-3.81" length="short" direction="out" rot="R180"/>
-<pin name="SDA" x="11.43" y="-6.35" length="short" rot="R180"/>
-<pin name="SCL" x="11.43" y="-8.89" length="short" rot="R180"/>
-<wire x1="8.89" y1="-11.43" x2="8.89" y2="11.43" width="0.254" layer="94"/>
-<wire x1="8.89" y1="11.43" x2="-8.89" y2="11.43" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="11.43" x2="-8.89" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="-11.43" x2="8.89" y2="-11.43" width="0.254" layer="94"/>
-<text x="-8.89" y="12.7" size="1.27" layer="95" font="vector" align="center-left">&gt;NAME</text>
-<text x="-8.89" y="-12.7" size="1.27" layer="95" font="vector" align="center-left">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PAM-7Q-GPS" prefix="U">
-<gates>
-<gate name="U" symbol="PAM-7Q-GPS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-SMD" package="PAM-7Q-SMD">
-<connects>
-<connect gate="U" pin="GND" pad="3"/>
-<connect gate="U" pin="RXD" pad="1"/>
-<connect gate="U" pin="SCL" pad="8"/>
-<connect gate="U" pin="SDA" pad="7"/>
-<connect gate="U" pin="TIME_PULSE" pad="6"/>
-<connect gate="U" pin="TXD" pad="2"/>
-<connect gate="U" pin="VCC" pad="4"/>
-<connect gate="U" pin="V_BKP" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-TH" package="PAM-7Q-TH">
-<connects>
-<connect gate="U" pin="GND" pad="3"/>
-<connect gate="U" pin="RXD" pad="1"/>
-<connect gate="U" pin="SCL" pad="8"/>
-<connect gate="U" pin="SDA" pad="7"/>
-<connect gate="U" pin="TIME_PULSE" pad="6"/>
-<connect gate="U" pin="TXD" pad="2"/>
-<connect gate="U" pin="VCC" pad="4"/>
-<connect gate="U" pin="V_BKP" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="adafruit">
 <packages>
 <package name="414-VA5R">
@@ -8746,6 +8627,182 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="u-blox">
+<packages>
+<package name="MAX-M8">
+<description>u-blox MAX-M8 GPS module</description>
+<smd name="1" x="4.75" y="-4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="2" x="4.75" y="-3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="3" x="4.75" y="-2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="4" x="4.75" y="-1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="5" x="4.75" y="0" dx="1.8" dy="0.8" layer="1"/>
+<smd name="6" x="4.75" y="1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="7" x="4.75" y="2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="8" x="4.75" y="3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="9" x="4.75" y="4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="10" x="-4.75" y="4.4" dx="1.8" dy="0.7" layer="1"/>
+<smd name="11" x="-4.75" y="3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="12" x="-4.75" y="2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="13" x="-4.75" y="1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="14" x="-4.75" y="0" dx="1.8" dy="0.8" layer="1"/>
+<smd name="15" x="-4.75" y="-1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="16" x="-4.75" y="-2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="17" x="-4.75" y="-3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="18" x="-4.75" y="-4.4" dx="1.8" dy="0.7" layer="1"/>
+<wire x1="4.85" y1="-5.05" x2="-4.85" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="4.85" y1="5.05" x2="-4.85" y2="5.05" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="-5.05" x2="4.85" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="-5.05" x2="4.85" y2="5.05" width="0.127" layer="51"/>
+<wire x1="4.85" y1="5.05" x2="-4.85" y2="5.05" width="0.127" layer="51"/>
+<wire x1="-4.85" y1="5.05" x2="-4.85" y2="-5.05" width="0.127" layer="51"/>
+<circle x="5.4" y="-5.6" radius="0.5" width="0" layer="21"/>
+<rectangle x1="4.2" y1="-5.1" x2="4.9" y2="-4.4" layer="51"/>
+<text x="-5.08" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="25" font="vector">&gt;VALUE</text>
+<rectangle x1="2.95" y1="0.8" x2="3.85" y2="1.4" layer="31"/>
+<rectangle x1="2.95" y1="3" x2="3.85" y2="3.6" layer="31"/>
+<rectangle x1="2.95" y1="1.95" x2="3.85" y2="2.55" layer="31"/>
+<rectangle x1="2.95" y1="-0.3" x2="3.85" y2="0.3" layer="31"/>
+<rectangle x1="2.95" y1="-1.4" x2="3.85" y2="-0.8" layer="31"/>
+<rectangle x1="2.95" y1="-2.5" x2="3.85" y2="-1.9" layer="31"/>
+<rectangle x1="2.95" y1="-3.6" x2="3.85" y2="-3" layer="31"/>
+<rectangle x1="-3.85" y1="-3.6" x2="-2.95" y2="-3" layer="31"/>
+<rectangle x1="-3.85" y1="-2.5" x2="-2.95" y2="-1.9" layer="31"/>
+<rectangle x1="-3.85" y1="-1.4" x2="-2.95" y2="-0.8" layer="31"/>
+<rectangle x1="-3.85" y1="-0.3" x2="-2.95" y2="0.3" layer="31"/>
+<rectangle x1="-3.85" y1="0.8" x2="-2.95" y2="1.4" layer="31"/>
+<rectangle x1="-3.85" y1="1.9" x2="-2.95" y2="2.5" layer="31"/>
+<rectangle x1="-3.85" y1="3" x2="-2.95" y2="3.6" layer="31"/>
+<rectangle x1="-3.85" y1="4.125" x2="-2.95" y2="4.675" layer="31"/>
+<rectangle x1="2.95" y1="4.125" x2="3.85" y2="4.675" layer="31"/>
+<rectangle x1="2.95" y1="-4.675" x2="3.85" y2="-4.125" layer="31"/>
+<rectangle x1="-3.85" y1="-4.675" x2="-2.95" y2="-4.125" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX-M8">
+<pin name="GND@1" x="-2.54" y="-17.78" length="short" rot="R90"/>
+<pin name="TXD" x="21.59" y="7.62" length="short" rot="R180"/>
+<pin name="RXD" x="21.59" y="5.08" length="short" rot="R180"/>
+<pin name="TIMEPULSE" x="-21.59" y="2.54" length="short"/>
+<pin name="EXTINT" x="-21.59" y="0" length="short"/>
+<pin name="V_BCKP" x="0" y="20.32" length="short" rot="R270"/>
+<pin name="VCC_IO" x="-2.54" y="20.32" length="short" rot="R270"/>
+<pin name="VCC" x="-5.08" y="20.32" length="short" rot="R270"/>
+<pin name="!RESET" x="-21.59" y="-2.54" length="short"/>
+<pin name="GND@10" x="0" y="-17.78" length="short" rot="R90"/>
+<pin name="RF_IN" x="-21.59" y="7.62" length="short"/>
+<pin name="GND@12" x="2.54" y="-17.78" length="short" rot="R90"/>
+<pin name="LNA_EN" x="-21.59" y="-5.08" length="short"/>
+<pin name="VCC_RF" x="2.54" y="20.32" length="short" rot="R270"/>
+<pin name="V_ANT" x="5.08" y="20.32" length="short" rot="R270"/>
+<pin name="SDA" x="21.59" y="-5.08" length="short" rot="R180"/>
+<pin name="SCL" x="21.59" y="-7.62" length="short" rot="R180"/>
+<pin name="!SAFEBOOT" x="-21.59" y="-7.62" length="short"/>
+<wire x1="-19.05" y1="-15.24" x2="-19.05" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-19.05" y1="17.78" x2="19.05" y2="17.78" width="0.254" layer="94"/>
+<wire x1="19.05" y1="17.78" x2="19.05" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="19.05" y1="-15.24" x2="-19.05" y2="-15.24" width="0.254" layer="94"/>
+<text x="7.62" y="-17.78" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="7.62" y="-20.32" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX-M8" prefix="U">
+<gates>
+<gate name="MAX-M8" symbol="MAX-M8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAX-M8">
+<connects>
+<connect gate="MAX-M8" pin="!RESET" pad="9"/>
+<connect gate="MAX-M8" pin="!SAFEBOOT" pad="18"/>
+<connect gate="MAX-M8" pin="EXTINT" pad="5"/>
+<connect gate="MAX-M8" pin="GND@1" pad="1"/>
+<connect gate="MAX-M8" pin="GND@10" pad="10"/>
+<connect gate="MAX-M8" pin="GND@12" pad="12"/>
+<connect gate="MAX-M8" pin="LNA_EN" pad="13"/>
+<connect gate="MAX-M8" pin="RF_IN" pad="11"/>
+<connect gate="MAX-M8" pin="RXD" pad="3"/>
+<connect gate="MAX-M8" pin="SCL" pad="17"/>
+<connect gate="MAX-M8" pin="SDA" pad="16"/>
+<connect gate="MAX-M8" pin="TIMEPULSE" pad="4"/>
+<connect gate="MAX-M8" pin="TXD" pad="2"/>
+<connect gate="MAX-M8" pin="VCC" pad="8"/>
+<connect gate="MAX-M8" pin="VCC_IO" pad="7"/>
+<connect gate="MAX-M8" pin="VCC_RF" pad="14"/>
+<connect gate="MAX-M8" pin="V_ANT" pad="15"/>
+<connect gate="MAX-M8" pin="V_BCKP" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="maxim">
+<packages>
+<package name="WLP-6">
+<smd name="A1" x="-0.2" y="0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="B1" x="-0.2" y="0" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="C1" x="-0.2" y="-0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="C2" x="0.2" y="-0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="B2" x="0.2" y="0" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<smd name="A2" x="0.2" y="0.4" dx="0.229" dy="0.229" layer="1" roundness="100"/>
+<wire x1="-0.5" y1="0.7" x2="0.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.7" x2="0.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.7" x2="-0.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.7" x2="0.5" y2="0.7" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.7" x2="0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.7" x2="-0.5" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.7" x2="-0.5" y2="0.7" width="0.127" layer="51"/>
+<rectangle x1="-0.5" y1="0.5" x2="-0.3" y2="0.7" layer="51"/>
+<rectangle x1="-0.6" y1="0.6" x2="-0.4" y2="0.8" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX2674">
+<pin name="ANT" x="16.51" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="GNDAC" x="16.51" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="RFOUT/!SHDN" x="16.51" y="2.54" length="short" rot="R180"/>
+<pin name="VCC" x="-16.51" y="2.54" length="short" direction="pwr"/>
+<pin name="RFIN" x="-16.51" y="0" length="short" direction="in"/>
+<pin name="GNDDC" x="-16.51" y="-2.54" length="short" direction="pwr"/>
+<wire x1="-13.97" y1="-5.08" x2="-13.97" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-13.97" y1="5.08" x2="13.97" y2="5.08" width="0.254" layer="94"/>
+<wire x1="13.97" y1="5.08" x2="13.97" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-5.08" x2="-13.97" y2="-5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-7.62" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX2674" prefix="U">
+<description>GPS/GNSS LNAs with Antenna Switch and Bias</description>
+<gates>
+<gate name="MAX2674" symbol="MAX2674" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WLP-6">
+<connects>
+<connect gate="MAX2674" pin="ANT" pad="C2"/>
+<connect gate="MAX2674" pin="GNDAC" pad="B2"/>
+<connect gate="MAX2674" pin="GNDDC" pad="C1"/>
+<connect gate="MAX2674" pin="RFIN" pad="B1"/>
+<connect gate="MAX2674" pin="RFOUT/!SHDN" pad="A2"/>
+<connect gate="MAX2674" pin="VCC" pad="A1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8757,7 +8814,6 @@ Source: AVX .. aphvc.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="U1" library="u-blox" deviceset="PAM-7Q-GPS" device="-TH"/>
 <part name="C1" library="adafruit" deviceset="SUPERCAP" device=""/>
 <part name="U3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device="" value="LIS3DHTR"/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
@@ -8789,6 +8845,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0402"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603K"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603K"/>
+<part name="U1" library="u-blox" deviceset="MAX-M8" device=""/>
+<part name="U2" library="maxim" deviceset="MAX2674" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8798,7 +8856,6 @@ Source: AVX .. aphvc.pdf</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="U1" gate="U" x="115.57" y="130.81"/>
 <instance part="C1" gate="G$1" x="143.51" y="129.54"/>
 <instance part="U3" gate="G$1" x="129.54" y="82.55"/>
 <instance part="U$6" gate="G$1" x="111.76" y="72.39"/>
@@ -8830,6 +8887,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C7" gate="G$1" x="115.57" y="158.75"/>
 <instance part="C8" gate="G$1" x="96.52" y="168.91"/>
 <instance part="C9" gate="G$1" x="88.9" y="168.91"/>
+<instance part="U1" gate="MAX-M8" x="68.58" y="124.46"/>
+<instance part="U2" gate="MAX2674" x="50.8" y="86.36"/>
 </instances>
 <busses>
 </busses>
