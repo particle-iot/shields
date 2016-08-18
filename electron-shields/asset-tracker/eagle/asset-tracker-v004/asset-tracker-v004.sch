@@ -436,6 +436,17 @@ LETTER landscape</description>
 <vertex x="0" y="7.62" curve="90"/>
 </polygon>
 </package>
+<package name="414-VA5R">
+<wire x1="-0.4" y1="1.4" x2="4.1" y2="1.4" width="0.127" layer="27"/>
+<wire x1="4.1" y1="1.4" x2="4.1" y2="-1.4" width="0.127" layer="27"/>
+<wire x1="4.1" y1="-1.4" x2="-0.4" y2="-1.4" width="0.127" layer="27"/>
+<wire x1="-0.4" y1="-1.4" x2="-0.4" y2="1.4" width="0.127" layer="27"/>
+<circle x="0" y="0" radius="2.4" width="0.127" layer="21"/>
+<smd name="+" x="-2.9" y="0" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="-" x="3.8" y="0" dx="3" dy="1.1" layer="1" rot="R90"/>
+<text x="-2.2" y="2.6" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.6" y="-3.7" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -461,6 +472,18 @@ LETTER landscape</description>
 <pin name="+" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="-" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="+1" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="CPOL-US">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -586,6 +609,22 @@ LETTER landscape</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+1"/>
 <connect gate="G$1" pin="+1" pad="+2"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SUPERCAP" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="414-VA5R">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
@@ -10815,90 +10854,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="Explore Labs EAGLE Library">
-<packages>
-<package name="MS621FE">
-<circle x="0" y="0" radius="3.4" width="0.2" layer="21"/>
-<smd name="POS" x="5.25" y="0.75" dx="2.8" dy="0.7" layer="1"/>
-<smd name="NEG" x="5.25" y="-0.75" dx="2.8" dy="0.7" layer="1"/>
-<text x="3.9" y="2.3" size="0.4064" layer="25">&gt;NAME</text>
-<text x="3.9" y="-2.8" size="0.4064" layer="27">&gt;VALUE</text>
-<dimension x1="0" y1="-3.4" x2="0" y2="3.4" x3="-5.5" y3="0" textsize="0.5" layer="47" dtype="diameter" width="0.05" visible="yes"/>
-<circle x="0" y="0" radius="3.4" width="0.01" layer="51"/>
-<circle x="0" y="0" radius="2.5" width="0.05" layer="51"/>
-<circle x="0" y="0" radius="2.3" width="0.05" layer="51"/>
-<polygon width="0" layer="51">
-<vertex x="-2.1" y="1"/>
-<vertex x="-2.1" y="-1"/>
-<vertex x="3.7" y="-1"/>
-<vertex x="3.7" y="0.5"/>
-<vertex x="4.2" y="0.5"/>
-<vertex x="4.2" y="1"/>
-</polygon>
-<rectangle x1="4.1" y1="-1" x2="5.9" y2="-0.5" layer="51"/>
-<wire x1="-3.9" y1="0" x2="3.4" y2="0" width="0" layer="49"/>
-<wire x1="3.4" y1="0" x2="7.8" y2="0" width="0" layer="51"/>
-<wire x1="0" y1="4.5" x2="0" y2="-5" width="0" layer="49"/>
-<wire x1="4.2" y1="1" x2="7.8" y2="1" width="0" layer="51"/>
-<dimension x1="7.8" y1="1" x2="7.8" y2="0" x3="8.7" y3="0.5" textsize="0.2" layer="47" dtype="vertical" width="0.01" visible="yes"/>
-<dimension x1="7.8" y1="0" x2="7.8" y2="-1" x3="8.7" y3="-0.5" textsize="0.2" layer="47" dtype="vertical" width="0.01" visible="yes"/>
-<rectangle x1="4.2" y1="0.5" x2="5.9" y2="1" layer="51"/>
-<dimension x1="5.9" y1="-1" x2="5.9" y2="-0.5" x3="7.4" y3="-0.75" textsize="0.2" layer="47" width="0.01" visible="yes"/>
-<dimension x1="6" y1="0.5" x2="6" y2="1" x3="7" y3="0.75" textsize="0.2" layer="47" width="0.01" visible="yes"/>
-<polygon width="0" layer="51">
-<vertex x="4.1" y="-1"/>
-<vertex x="4.1" y="-0.5"/>
-<vertex x="3.7" y="-0.5"/>
-<vertex x="3.7" y="-1"/>
-</polygon>
-<wire x1="2.4" y1="-1" x2="7.8" y2="-1" width="0" layer="51"/>
-<wire x1="3.9" y1="0.5" x2="3.9" y2="-0.5" width="0" layer="49"/>
-<wire x1="3.4" y1="0" x2="3.4" y2="-2.3" width="0" layer="49"/>
-<dimension x1="3.4" y1="-2" x2="5.9" y2="-1.9" x3="4.65" y3="-2.1" textsize="0.2" layer="47" dtype="horizontal" width="0.01" visible="yes"/>
-<dimension x1="3.9" y1="0.5" x2="6" y2="0" x3="4.95" y3="1.9" textsize="0.2" layer="47" dtype="horizontal" width="0.01" visible="yes"/>
-<dimension x1="4.1" y1="-1" x2="5.9" y2="-1" x3="5" y3="-1.5" textsize="0.2" layer="49" width="0.01" visible="yes"/>
-<dimension x1="4.2" y1="1" x2="5.9" y2="1" x3="5.05" y3="1.4" textsize="0.2" layer="49" width="0.01" visible="yes"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BATTERY-1">
-<wire x1="-3.556" y1="0" x2="3.556" y2="0" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<pin name="NEG" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
-<pin name="POS" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
-<text x="-2.54" y="0.508" size="1.778" layer="94">+</text>
-<text x="-2.54" y="-4.572" size="1.778" layer="94">-</text>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MS621FE" prefix="U">
-<description>&lt;b&gt;SEIKO 6.8mm Rechargeable 3V lithium battery&lt;b&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;If discontinued or not available, similar devices are available from Panasonic and Sanyo, usually direct replacements.&lt;b&gt;</description>
-<gates>
-<gate name="G$1" symbol="BATTERY-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MS621FE">
-<connects>
-<connect gate="G$1" pin="NEG" pad="NEG"/>
-<connect gate="G$1" pin="POS" pad="POS"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://speed.sii.co.jp/data/file_PRODUCT_MASTER_50112_TITLE_IMAGESP.pdf" constant="no"/>
-<attribute name="LINK" value="http://search.digikey.com/us/en/products/MS621FE-FL11E/728-1057-ND/1889208" constant="no"/>
-<attribute name="MFGPN" value="MS621FE" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10964,13 +10919,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="JST-PTH-VERT"/>
 <part name="U4" library="filters" deviceset="EPCOS-B9444" device=""/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
-<part name="U5" library="Explore Labs EAGLE Library" deviceset="MS621FE" device=""/>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
+<part name="C1" library="adafruit" deviceset="SUPERCAP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11048,13 +11003,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="VALUE" x="34.29" y="144.78" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="U$27" gate="G$1" x="31.75" y="139.7"/>
-<instance part="U5" gate="G$1" x="236.22" y="158.75" rot="R90"/>
 <instance part="U$28" gate="G$1" x="8.89" y="153.67"/>
 <instance part="JP3" gate="G$1" x="224.79" y="115.57" rot="R180"/>
 <instance part="JP4" gate="G$1" x="224.79" y="118.11" rot="R180"/>
 <instance part="JP5" gate="G$1" x="129.54" y="115.57"/>
 <instance part="JP6" gate="G$1" x="129.54" y="120.65"/>
 <instance part="JP7" gate="G$1" x="129.54" y="123.19"/>
+<instance part="C1" gate="G$1" x="238.76" y="158.75" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11133,7 +11088,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U$14" gate="G$1" pin="GND"/>
 <wire x1="243.84" y1="158.75" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="NEG"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -11525,11 +11480,11 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="SJ1" gate="G$1" pin="3"/>
 <wire x1="228.6" y1="156.21" x2="228.6" y2="158.75" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="158.75" x2="231.14" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="158.75" x2="236.22" y2="158.75" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="158.75" x2="226.06" y2="158.75" width="0.1524" layer="91"/>
 <junction x="228.6" y="158.75"/>
-<pinref part="U5" gate="G$1" pin="POS"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$11" class="0">
