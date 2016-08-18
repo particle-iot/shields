@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -35279,6 +35279,8 @@
 <rectangle x1="10.4394" y1="1.8643625" x2="10.44955625" y2="1.87451875" layer="21" rot="R270"/>
 <rectangle x1="10.4394" y1="1.84404375" x2="10.44955625" y2="1.8542" layer="21" rot="R270"/>
 <rectangle x1="10.449559375" y1="1.9151625" x2="10.459715625" y2="1.92531875" layer="21" rot="R270"/>
+<text x="23.368" y="16.51" size="0.8128" layer="22" font="vector" ratio="12" rot="MR0" align="center">v004</text>
+<text x="17.018" y="18.034" size="1.4224" layer="22" font="vector" ratio="12" rot="MR0" align="center">Asset Tracker</text>
 </plain>
 <libraries>
 <library name="adafruit">
