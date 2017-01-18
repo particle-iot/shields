@@ -1,7 +1,0 @@
-{
-    "name": "RelayShield",
-    "version": "0.0.1",
-    "author": "Richard Whitney <richard@particle.io>",
-    "license": "LGPL",
-    "description": "Functions to make the Photon Relay Shield even easier!"
-}

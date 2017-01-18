@@ -10,8 +10,8 @@ int relayOff(String command);
 void setup() {
     //.begin() sets up a couple of things and is necessary to use the rest of the functions
     myRelays.begin();
-    Spark.function("relayOn", relayOn);
-    Spark.function("relayOff", relayOff);
+    Particle.function("relayOn", relayOn);
+    Particle.function("relayOff", relayOff);
 }
 
 void loop() {
@@ -23,12 +23,12 @@ int relayOn(String command){
     char inputStr[64];
     command.toCharArray(inputStr,64);
     int i = atoi(inputStr);
-    
+
     // Turn the desired relay on
     myRelays.on(i);
-    
+
     // Respond
-    return 1;    
+    return 1;
 }
 
 int relayOff(String command){
@@ -36,10 +36,10 @@ int relayOff(String command){
     char inputStr[64];
     command.toCharArray(inputStr,64);
     int i = atoi(inputStr);
-    
+
     // Turn the desired relay off
     myRelays.off(i);
-    
+
     // Respond
-    return 1;    
+    return 1;
 }
