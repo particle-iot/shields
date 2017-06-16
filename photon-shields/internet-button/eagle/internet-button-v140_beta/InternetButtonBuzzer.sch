@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4465,13 +4465,14 @@ by exp-lbrs.ulp</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="10K"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C14" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10uF"/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R3" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -4626,6 +4627,7 @@ A6:INT_LIS3DHTR</text>
 <instance part="GND23" gate="1" x="231.14" y="81.28"/>
 <instance part="C14" gate="G$1" x="164.338" y="123.19"/>
 <instance part="GND24" gate="1" x="164.338" y="115.57"/>
+<instance part="R3" gate="G$1" x="213.36" y="151.13" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4942,13 +4944,13 @@ A6:INT_LIS3DHTR</text>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="ADC3"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="264.16" y1="96.52" x2="274.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="96.52" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="RES(GND)"/>
 <wire x1="274.32" y1="88.9" x2="274.32" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="88.9" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND@2"/>
+<wire x1="264.16" y1="93.98" x2="274.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="93.98" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
 <junction x="274.32" y="88.9"/>
 </segment>
 <segment>
@@ -4960,6 +4962,12 @@ A6:INT_LIS3DHTR</text>
 <pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="164.338" y1="120.65" x2="164.338" y2="118.11" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND@1"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="233.68" y1="86.36" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="86.36" x2="231.14" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -5082,11 +5090,6 @@ A6:INT_LIS3DHTR</text>
 </net>
 <net name="A0" class="0">
 <segment>
-<label x="214.63" y="151.13" size="1.778" layer="95"/>
-<wire x1="222.25" y1="151.13" x2="207.01" y2="151.13" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="A0"/>
-</segment>
-<segment>
 <wire x1="146.05" y1="130.81" x2="146.05" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VS"/>
 <wire x1="146.05" y1="128.27" x2="144.78" y2="128.27" width="0.1524" layer="91"/>
@@ -5101,6 +5104,11 @@ A6:INT_LIS3DHTR</text>
 <wire x1="164.338" y1="128.27" x2="164.338" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="164.338" y1="130.81" x2="158.75" y2="130.81" width="0.1524" layer="91"/>
 <junction x="158.75" y="130.81"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="151.13" x2="203.2" y2="151.13" width="0.1524" layer="91"/>
+<label x="204.47" y="151.13" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -5373,12 +5381,11 @@ A6:INT_LIS3DHTR</text>
 <wire x1="44.45" y1="13.97" x2="52.07" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND@1" class="0">
+<net name="N$4" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="GND@1"/>
-<pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="233.68" y1="86.36" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="86.36" x2="231.14" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="A0"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="222.25" y1="151.13" x2="218.44" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
