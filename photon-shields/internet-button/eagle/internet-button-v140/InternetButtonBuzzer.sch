@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4151,7 +4151,7 @@ by exp-lbrs.ulp</description>
 <part name="U$3" library="Spark" deviceset="SPARK_LOGO_WITH_PLANE" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
 <part name="U1" library="SparkFun-Sensors" deviceset="ADXL362" device="ADXL362-1:1"/>
-<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$2" library="Spark" deviceset="12MM_TACTILE_SWITCH" device=""/>
 <part name="U$4" library="Spark" deviceset="12MM_TACTILE_SWITCH" device=""/>
@@ -4201,7 +4201,7 @@ by exp-lbrs.ulp</description>
 <part name="U2" library="asset-tracker-v008" deviceset="ACCEL_LIS3DHTR" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="C12" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C13" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="10K"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4294,7 +4294,7 @@ A6:INT_LIS3DHTR</text>
 <instance part="U$3" gate="G$1" x="237.49" y="212.09"/>
 <instance part="R1" gate="G$1" x="82.55" y="247.65"/>
 <instance part="U1" gate="G$1" x="129.54" y="125.73"/>
-<instance part="C13" gate="G$1" x="158.75" y="123.19"/>
+<instance part="C12" gate="G$1" x="158.75" y="123.19"/>
 <instance part="GND3" gate="1" x="158.75" y="115.57"/>
 <instance part="U$2" gate="G$1" x="135.89" y="73.66" smashed="yes">
 <attribute name="NAME" x="133.35" y="80.01" size="1.778" layer="95"/>
@@ -4353,7 +4353,7 @@ A6:INT_LIS3DHTR</text>
 <instance part="U2" gate="G$1" x="248.92" y="91.44"/>
 <instance part="+3V1" gate="G$1" x="232.41" y="106.68"/>
 <instance part="+3V5" gate="G$1" x="251.46" y="123.19"/>
-<instance part="C12" gate="G$1" x="257.81" y="116.84" rot="R180"/>
+<instance part="C13" gate="G$1" x="257.81" y="116.84" rot="R180"/>
 <instance part="R2" gate="G$1" x="267.97" y="73.66" rot="R90"/>
 <instance part="+3V6" gate="G$1" x="267.97" y="82.55"/>
 <instance part="GND21" gate="1" x="274.32" y="82.55"/>
@@ -4668,7 +4668,7 @@ A6:INT_LIS3DHTR</text>
 <wire x1="220.98" y1="237.49" x2="220.98" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="158.75" y1="120.65" x2="158.75" y2="118.11" width="0.1524" layer="91"/>
 </segment>
@@ -4689,7 +4689,7 @@ A6:INT_LIS3DHTR</text>
 <junction x="274.32" y="88.9"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="1"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="257.81" y1="111.76" x2="257.81" y2="110.49" width="0.1524" layer="91"/>
 </segment>
@@ -5071,7 +5071,7 @@ A6:INT_LIS3DHTR</text>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <pinref part="U2" gate="G$1" pin="VDD"/>
 <wire x1="251.46" y1="120.65" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="119.38" x2="251.46" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="257.81" y1="119.38" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
 <junction x="251.46" y="119.38"/>
@@ -5088,7 +5088,7 @@ A6:INT_LIS3DHTR</text>
 <wire x1="146.05" y1="128.27" x2="144.78" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDDIO"/>
 <wire x1="144.78" y1="130.81" x2="146.05" y2="130.81" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="158.75" y1="128.27" x2="158.75" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="158.75" y1="130.81" x2="146.05" y2="130.81" width="0.1524" layer="91"/>
 <junction x="146.05" y="130.81"/>
